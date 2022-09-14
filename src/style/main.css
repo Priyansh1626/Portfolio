@@ -219,8 +219,13 @@ html {
 }
 
 .section2 {
-  height: 168vh;
+  height: 100%;
   background-color: white;
+}
+.section2 .abtclr {
+  background-color: white;
+  padding-bottom: 5rem;
+  box-shadow: 0.5rem 0.3rem 0.4rem black;
 }
 .section2 .hexa_About_box {
   height: 40vh;
@@ -329,14 +334,21 @@ html {
 }
 
 .section3 {
-  height: 130vh;
-  background-color: white;
+  height: 100%;
+  background-color: #252934;
+}
+.section3 .clr {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.93);
+  padding-bottom: 13rem;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+          clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 }
 .section3 .allinProject {
-  background-color: rgba(210, 210, 210, 0.284);
   height: 100%;
 }
 .section3 .allinProject .project_main_box {
+  height: 100%;
   width: 100%;
   margin-top: 4rem;
   display: flex;
@@ -375,13 +387,14 @@ html {
   text-align: center;
   align-items: center;
   font-size: large;
+  margin: 0.5rem 0;
 }
 .section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .top {
   font-size: 2rem;
   font-weight: 600;
 }
 .section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
-  color: rgba(255, 0, 0, 0.67);
+  color: rgba(255, 0, 0, 0.597);
   line-height: 1rem;
 }
 .section3 .allinProject .project_main_box .row .projectCard .hoverButtonBox {
@@ -397,8 +410,8 @@ html {
 }
 .section3 .allinProject .project_main_box .row .projectCard .hoverButtonBox button {
   height: 100%;
-  width: 40%;
-  border: 0.1rem solid rgba(255, 0, 0, 0.696);
+  width: 32%;
+  border: 0.1rem solid rgba(255, 0, 0, 0.436);
   transition: all 0.1s linear;
 }
 .section3 .allinProject .project_main_box .row .projectCard .hoverButtonBox button a {
@@ -426,34 +439,12 @@ html {
 .section3 .allinProject .project_main_box .row .projectCard:hover .hoverDivBox {
   opacity: 1;
   transition: all 0.2s linear;
-  top: 25%;
+  top: 20%;
 }
 .section3 .allinProject .project_main_box .row .projectCard:hover .hoverButtonBox {
   opacity: 1;
   bottom: 20%;
   transition: all 0.2s linear;
-}
-
-.clip_box {
-  height: 30vh;
-  width: 100%;
-}
-.clip_box .clr {
-  height: 100%;
-  width: 100%;
-  background-color: #252934;
-}
-.clip_box .clr .clipNow {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  -webkit-clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-          clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-}
-.clip_box .clr .clipNow .mainClr {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(210, 210, 210, 0.284);
 }
 
 .section4 {

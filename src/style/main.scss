@@ -190,8 +190,16 @@ html{
 
 //about
 .section2{
-    height: 168vh;
+    height: 100%;
     background-color: white;
+
+    .abtclr{
+        // background-color: rgba(210, 210, 210, 0.284);
+        background-color: white;
+        // background-color: blue;
+        padding-bottom: 5rem;
+        box-shadow: .5rem .3rem .4rem black;
+    }
 
     .hexa_About_box{
         // background-color: red;
@@ -318,19 +326,31 @@ html{
 
 //project
 .section3{
-    height: 130vh;
-    background-color:white;
+    height: 100%;
+    background-color:#252934;
+    // background-color: white;
+    // padding-top: 10rem;
+
+    .clr{
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.93);
+        // background-color: rgba(210, 210, 210, 0.284);
+        padding-bottom: 13rem;
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    }
 
     .allinProject{
-        background-color: rgba(210, 210, 210, 0.284);
+        // background-color: rgba(210, 210, 210, 0.284);
         // background-color: green;
         height: 100%;
 
         .project_main_box{
+            height: 100%;
             width: 100%;
             margin-top: 4rem;
             // background-color: green; 
             @include flex_center();
+            // margin-bottom: 3rem;
 
             .row{
                 width: 100%;
@@ -341,6 +361,7 @@ html{
                     height: 45vh;
                     transition: $trans2;
                     position: relative;
+                    // padding-bottom: 3rem;
 
                     & img{
                         height: 100%;
@@ -364,6 +385,7 @@ html{
                             text-align: center;
                             align-items: center;
                             font-size: large;
+                            margin: .5rem 0;
                         }
 
                         .top{
@@ -372,7 +394,7 @@ html{
                         }
 
                         .bottom{
-                            color: rgba(255, 0, 0, 0.67);
+                            color: rgba(255, 0, 0, 0.597);
                             line-height: 1rem;
                         }
                     }
@@ -389,8 +411,8 @@ html{
 
                         & button{
                             height: 100%;
-                            width: 40%;
-                            border: .1rem solid rgba(255, 0, 0, 0.696);
+                            width: 32%;
+                            border: .1rem solid rgba(255, 0, 0, 0.436);
                             transition: $trans1;
 
                             & a{
@@ -424,7 +446,7 @@ html{
                         & .hoverDivBox{
                             opacity: 1;
                             transition: $trans2;
-                            top: 25%;
+                            top: 20%;
                         }
 
                         & .hoverButtonBox{
@@ -438,32 +460,6 @@ html{
         }
     }
 
-}
-
-//below project section clip path 
-.clip_box{
-    height: 30vh;
-    width: 100%;
-
-    & .clr{
-        height: 100%;
-        width: 100%;
-        background-color: #252934;
-
-        & .clipNow{
-            height: 100%;
-            width: 100%;
-            background-color: white;
-            clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
-
-            .mainClr{
-                height: 100%;
-                width: 100%;
-                background-color: rgba(210, 210, 210, 0.284);
-                
-            }
-        }
-    }
 }
 
 //contact
