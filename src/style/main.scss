@@ -417,7 +417,7 @@ html{
                         box-shadow: .3rem .2rem 1rem rgba(201, 198, 198, 0.874);
 
                         & img{
-                            opacity: 0;
+                            opacity: 0.1;
                             transition: $trans2;
                         }
 
@@ -460,6 +460,7 @@ html{
                 height: 100%;
                 width: 100%;
                 background-color: rgba(210, 210, 210, 0.284);
+                
             }
         }
     }

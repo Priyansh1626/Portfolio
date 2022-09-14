@@ -1,25 +1,26 @@
 import cardGameImg from "../images/projImg1.jfif";
+import ProjText from "../images/ProjText.jfif";
 
 const projectCardData = [
   {
     id: "1",
-    img: { cardGameImg },
-    top: "Project 1",
+    img: ProjText,
+    top: "TextUtility",
     bottom: "html / ccss / javascript",
-    btnLink: "#section1",
-    btn: "Lets Go",
+    btnLink: "https://priyansh1626.github.io/TextConverter/",
+    btn: "Visit",
   },
   {
     id: "2",
-    img: { cardGameImg },
-    top: "Card Game",
+    img: ProjText,
+    top: "TextUtility",
     bottom: "html / ccss / javascript",
     btnLink: "#section1",
     btn: "Visit",
   },
   {
     id: "3",
-    img: { cardGameImg },
+    img: cardGameImg,
     top: "Card Game",
     bottom: "html / ccss / javascript",
     btnLink: "#section1",
@@ -27,7 +28,7 @@ const projectCardData = [
   },
   {
     id: "4",
-    img: { cardGameImg },
+    img: cardGameImg,
     top: "Card Game",
     bottom: "html / ccss / javascript",
     btnLink: "#section1",
@@ -35,7 +36,7 @@ const projectCardData = [
   },
   {
     id: "5",
-    img: { cardGameImg },
+    img: cardGameImg,
     top: "Card Game",
     bottom: "html / ccss / javascript",
     btnLink: "#section1",
@@ -43,7 +44,7 @@ const projectCardData = [
   },
   {
     id: "6",
-    img: { cardGameImg },
+    img: cardGameImg,
     top: "Card Game",
     bottom: "html / ccss / javascript",
     btnLink: "#section1",

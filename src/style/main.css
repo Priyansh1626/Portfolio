@@ -420,7 +420,7 @@ html {
   box-shadow: 0.3rem 0.2rem 1rem rgba(201, 198, 198, 0.874);
 }
 .section3 .allinProject .project_main_box .row .projectCard:hover img {
-  opacity: 0;
+  opacity: 0.1;
   transition: all 0.2s linear;
 }
 .section3 .allinProject .project_main_box .row .projectCard:hover .hoverDivBox {
