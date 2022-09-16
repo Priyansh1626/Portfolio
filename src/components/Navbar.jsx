@@ -28,6 +28,11 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav_link">
+            <a href="#resume" className="">
+              Ressume
+            </a>
+          </li>
+          <li className="nav_link">
             <a href="#contact" className="">
               Contact
             </a>

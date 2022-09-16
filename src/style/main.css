@@ -91,6 +91,7 @@ html {
   width: 100%;
   height: 4rem;
   display: none;
+  opacity: 0;
   transition: all 0.3s linear;
   z-index: 100;
 }
@@ -99,16 +100,16 @@ html {
 }
 .header_container .navbar_links {
   height: 1rem;
-  margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
+  margin-right: 1rem;
 }
 .header_container .navbar_links .nav_link a {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
-  margin: 0 1.5rem;
+  margin: 0 1.2rem;
   color: rgba(255, 255, 255, 0.632);
   position: relative;
   transition: all 0.1s linear;
@@ -353,11 +354,11 @@ html {
 
 .section3 {
   height: 100%;
-  background-color: #252934;
+  background-color: white;
 }
 .section3 .clr {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: rgba(238, 238, 238, 0.736);
   padding-bottom: 13rem;
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
           clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
@@ -466,11 +467,15 @@ html {
 }
 
 .section4 {
+  background-color: white;
+}
+
+.section5 {
   height: 100vh;
   background-color: #252934;
   color: white;
 }
-.section4 .headerbox {
+.section5 .headerbox {
   margin-top: 1rem;
   height: 6rem;
   font-size: 3rem;
@@ -481,7 +486,7 @@ html {
   justify-content: center;
   align-items: center;
 }
-.section4 .headerbox::after {
+.section5 .headerbox::after {
   content: "";
   width: 6vw;
   height: 0.3rem;
@@ -490,30 +495,30 @@ html {
   background-color: white;
   display: block;
 }
-.section4 .ask {
+.section5 .ask {
   height: 4rem;
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section4 .ask p {
+.section5 .ask p {
   margin: 0;
   color: cyan;
 }
-.section4 .formbox {
+.section5 .formbox {
   height: 50%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section4 .formbox .formContainer {
+.section5 .formbox .formContainer {
   margin-top: 3rem;
   height: 100%;
   width: 35%;
 }
-.section4 .formbox .formContainer input, .section4 .formbox .formContainer textarea {
+.section5 .formbox .formContainer input, .section5 .formbox .formContainer textarea {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -521,25 +526,25 @@ html {
   padding: 0 0.7rem;
   font-size: 1rem;
 }
-.section4 .formbox .formContainer input:focus, .section4 .formbox .formContainer textarea:focus {
+.section5 .formbox .formContainer input:focus, .section5 .formbox .formContainer textarea:focus {
   border: none;
   outline: none;
 }
-.section4 .formbox .formContainer input {
+.section5 .formbox .formContainer input {
   height: 6vh;
   margin-top: 0.2rem;
 }
-.section4 .formbox .formContainer textarea {
+.section5 .formbox .formContainer textarea {
   height: 25vh;
   margin-top: 0.2rem;
   padding-top: 0.5rem;
 }
-.section4 .formbox .btnBox {
+.section5 .formbox .btnBox {
   margin-top: 0.3rem;
   height: 5.5Vh;
   text-align: right;
 }
-.section4 .formbox .btnBox button {
+.section5 .formbox .btnBox button {
   height: 100%;
   background-color: transparent;
   border: 0.1rem solid white;
@@ -547,7 +552,7 @@ html {
   font-size: 1.2rem;
   transition: all 0.2s linear;
 }
-.section4 .formbox .btnBox button:hover {
+.section5 .formbox .btnBox button:hover {
   background-color: cyan;
   border: 0.1rem solid cyan;
   transition: all 0.2s linear;
