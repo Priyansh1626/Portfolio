@@ -10,12 +10,14 @@ import Navbar from "./components/Navbar";
 // import More from "./components/More";
 import "./main.js";
 import Footer from "./components/Footer";
+import BackToTopBtn from "./components/BackToTopBtn";
 
 export default function App() {
   return (
     <>
       <Home />
       <Navbar />
+      <BackToTopBtn />
       <About />
       <Projects />
       <Contact />

@@ -218,6 +218,24 @@ html {
   display: block;
 }
 
+.upBox {
+  background-color: cyan;
+  height: 4vh;
+  width: 2.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  z-index: 100;
+  cursor: pointer;
+  border: none;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
 .section2 {
   height: 100%;
   background-color: white;
