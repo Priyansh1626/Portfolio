@@ -8,26 +8,28 @@ export default function Projects() {
     <>
       <div className="section3" id="projects">
         <div className="clr">
-          <div className="allinProject">
-            <br />
-            <br />
-            <br />
-            <br />
-            <Title title="PROJECTS" />
-            <div className="project_main_box container">
-              <div className="row p-3">
-                {projectCardData.map((currElm) => {
-                  return (
-                    <ProjectCard
-                      key={currElm.id}
-                      img={currElm.img}
-                      top={currElm.top}
-                      bottom={currElm.bottom}
-                      btnLink={currElm.btnLink}
-                      btn={currElm.btn}
-                    />
-                  );
-                })}
+          <div className="clr2">
+            <div className="allinProject">
+              <br />
+              <br />
+              <br />
+              <br />
+              <Title title="PROJECTS" />
+              <div className="project_main_box container">
+                <div className="row p-3">
+                  {projectCardData.map((currElm) => {
+                    return (
+                      <ProjectCard
+                        key={currElm.id}
+                        img={currElm.img}
+                        top={currElm.top}
+                        bottom={currElm.bottom}
+                        btnLink={currElm.btnLink}
+                        btn={currElm.btn}
+                      />
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>

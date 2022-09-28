@@ -12,7 +12,6 @@ export default function About() {
           <br />
           <br />
           <br />
-          <br />
           <Title title="ABOUT" />
           <div className="hexa_About_box">
             {aboutHexData.map((elem, index) => {

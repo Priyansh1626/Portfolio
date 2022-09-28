@@ -4,19 +4,20 @@
 // @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Slab:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt:wght@500&family=Roboto+Slab:wght@500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Sans', sans-serif;
-    color: white;
+    // color: white;
+    // overflow: hidden;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +26,7 @@ html{
 }
 
 //navbar
-.header_container{
+.header_container {
     height: 4rem;
     background-color: #181f29;
     @include flex_center();
@@ -46,15 +47,15 @@ html{
         display: none;
     }
 
-    .navbar_links{
+    .navbar_links {
         height: 1rem;
         @include flex_center(flex-end);
         list-style: none;
         margin-right: 1rem;
 
-        .nav_link{
+        .nav_link {
 
-            & a{
+            & a {
                 font-size: 1.3rem;
                 text-decoration: none;
                 margin: 0 1.2rem;
@@ -62,10 +63,10 @@ html{
                 position: relative;
                 transition: $trans1;
 
-                &:hover{
+                &:hover {
                     color: white;
 
-                    &::after{
+                    &::after {
                         content: '';
                         width: 100%;
                         position: absolute;
@@ -76,50 +77,78 @@ html{
                     }
                 }
 
-                &:active{
+                &:active {
                     color: rgba(255, 255, 255, 0.781);
                 }
             }
         }
     }
-    input{
+
+    input {
         display: none;
     }
 }
 
 //homepage
-.homeBody{
+.homeBody {
     min-height: 100vh;
     @include flex_center();
+    color: white;
+    overflow: hidden;
 
-    .homeMain_box{
+    .typeHome{
+        position: relative;
+        // text-decoration: underline;
+    }
+
+    .typeHome::after{
+        content: "";
+        position: absolute;
+        left: -.5%;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: black;
+        border-left: .2rem solid #e31b6d;
+        animation: typing 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes typing {
+        100%{
+            left: 101%;
+        }
+    }
+
+    .homeMain_box {
         height: 50vh;
         width: 50%;
         // background-color: red;
+        overflow: hidden;
         text-align: center;
         margin-top: 4rem;
         @include flex_center();
         // padding-top: 10rem;
 
-        span{
+        span {
             // color: rgb(115, 10, 236);
             color: #e31b6d;
             font-family: "Roboto Slab";
+            overflow: hidden;
         }
 
-        p{
-            font-size: 2.7rem ;
+        p {
+            font-size: 2.7rem;
             line-height: 4rem;
             font-family: 'Pt Serif', sans-serif;
         }
 
-        .project_btn{
+        .project_btn {
             height: 7vh;
             // background-color: yellow;
             margin-top: 3rem;
             @include flex_center();
 
-            .myWorkBtn{
+            .myWorkBtn {
                 height: 3.5rem;
                 padding: .6rem;
                 width: 13rem;
@@ -128,33 +157,33 @@ html{
                 border: .1rem solid cyan;
                 transition: $trans2;
 
-                & a{
+                & a {
                     text-decoration: none;
                     color: white;
                 }
 
-                &:hover{
+                &:hover {
                     transition: $trans2;
                     background-color: cyan;
 
-                    & a{
+                    & a {
                         color: black;
                     }
 
-                    & i{
+                    & i {
                         transition: $trans2;
                         transform: rotate(90deg);
                         color: black;
                     }
                 }
 
-                & i{
+                & i {
                     margin-left: .3rem;
                     font-size: 1rem;
                     transition: $trans2;
                 }
 
-                &:active{   
+                &:active {
                     transition: $trans1;
                     transform: translateY(.2rem);
                 }
@@ -164,12 +193,12 @@ html{
 }
 
 //title(heading)
-.headerbox{
+.headerbox {
     @include titleCss();
 }
 
 // go up
-.upBox{
+.upBox {
     background-color: cyan;
     height: 4vh;
     width: 2.2vw;
@@ -186,11 +215,11 @@ html{
 }
 
 //about
-.section2{
+.section2 {
     height: 100%;
     background-color: white;
 
-    .abtclr{
+    .abtclr {
         // background-color: rgba(210, 210, 210, 0.284);
         background-color: white;
         // background-color: blue;
@@ -198,23 +227,23 @@ html{
         box-shadow: .5rem .3rem .4rem black;
     }
 
-    .hexa_About_box{
+    .hexa_About_box {
         // background-color: red;
         height: 40vh;
         margin-top: 4rem;
         @include flex_center();
 
-        .hexbox{
+        .hexbox {
             height: 16rem;
             width: 17vw;
             padding: 0 .5rem;
-            @include flex_center(space-around,center);
+            @include flex_center(space-around, center);
             flex-direction: column;
             // background-color: pink;
             text-align: center;
             margin: 0 2rem;
 
-            .hexagon{
+            .hexagon {
                 height: 7.5rem;
                 width: 8rem;
                 // background-color: cyan;
@@ -223,35 +252,37 @@ html{
                 @include flex-center();
                 // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 // box-shadow: .1rem .2rem 1rem rgba(177, 177, 177, 0.496);
-                
-                img{
+
+                img {
                     height: 6.5rem;
                     width: 7rem;
                 }
 
             }
-            .title{
+
+            .title {
                 margin-top: -.4rem;
                 font-size: 1.7rem;
                 color: rgba(0, 0, 0, 0.759);
                 font-weight: 600;
                 // background-color: yellow;
             }
-            .desc{
+
+            .desc {
                 font-size: 1rem;
                 color: black;
             }
         }
     }
 
-    .main_about_box{
+    .main_about_box {
         margin-top: 3rem;
         height: 75vh;
         width: 100%;
         // background-color: red;
         @include flex-center();
 
-        .left_Box{
+        .left_Box {
             @include flex_center(space-around);
             flex-direction: column;
             height: 100%;
@@ -259,7 +290,7 @@ html{
             // background-color: yellow;
         }
 
-        & .left{
+        & .left {
             width: 40vw;
             margin-left: 3rem;
             // margin-top: 1rem;
@@ -268,13 +299,13 @@ html{
             @include flex-center();
             flex-direction: column;
             // background-color: green;
-            
-            & .imgBox{
+
+            & .imgBox {
                 @include flex-center();
                 // background-color: green;
                 // margin-top: 2rem;
-                
-                & img{
+
+                & img {
                     height: 20rem;
                     width: 20rem;
                     // border: .2rem solid rgba(0, 0, 0, 0.722);
@@ -282,7 +313,7 @@ html{
                 }
             }
 
-            & .title{
+            & .title {
                 height: 3rem;
                 // background-color: pink;
                 text-align: center;
@@ -291,19 +322,19 @@ html{
                 color: rgb(2, 2, 2);
             }
 
-            & .desc{
+            & .desc {
                 height: 9rem;
                 margin-top: -1.5rem;
                 // background-color: grey;
                 width: 115%;
                 @include flex_center();
-                text-align:center;
+                text-align: center;
 
-                & p{
+                & p {
                     color: black;
 
-                    span{
-                        a{
+                    span {
+                        a {
                             text-decoration: none;
                             color: rgb(0, 42, 255);
                         }
@@ -311,8 +342,8 @@ html{
                 }
             }
         }
-        
-        & .right{
+
+        & .right {
             width: 60%;
             background-color: yellow;
             height: 100%;
@@ -322,27 +353,41 @@ html{
 }
 
 //project
-.section3{
+.section3 {
     height: 100%;
     // background-color:#252934;
     // background-color:rgba(255, 255, 255, 0.467);
     background-color: white;
+    // box-shadow: .3rem .3rem 10rem rgb(192, 188, 188);
+    // border: .2rem solid white;
     // padding-top: 10rem;
 
-    .clr{
+    .clr {
         height: 100%;
-        background-color: rgba(238, 238, 238, 0.736);
-        // background-color: rgba(210, 210, 210, 0.284);
-        padding-bottom: 13rem;
-        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+        // background-color: rgba(238, 238, 238, 0.736);
+        // padding-top: -2rem;
+        background-color: #252934;
+        // background-color: white;
+        clip-path: polygon(0 2%, 100% 2%, 100% 100%, 0% 100%);
+        // background-color:red; 
+
+        padding-top: -2rem;
     }
 
-    .allinProject{
+    .clr2 {
+        background-color: rgba(255, 255, 255, 0.93);
+        // background-color: red;
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+        padding-bottom: 13rem;
+        height: 100%;
+    }
+
+    .allinProject {
         // background-color: rgba(210, 210, 210, 0.284);
         // background-color: green;
         height: 100%;
 
-        .project_main_box{
+        .project_main_box {
             height: 100%;
             width: 100%;
             margin-top: 4rem;
@@ -350,24 +395,24 @@ html{
             @include flex_center();
             // margin-bottom: 3rem;
 
-            .row{
+            .row {
                 width: 100%;
                 margin: 0;
                 @include flex_center();
-                
-                .projectCard{
+
+                .projectCard {
                     height: 45vh;
                     transition: $trans2;
                     position: relative;
                     // padding-bottom: 3rem;
 
-                    & img{
+                    & img {
                         height: 100%;
                         width: 100%;
                         transition: $trans2;
                     }
 
-                    .hoverDivBox{
+                    .hoverDivBox {
                         height: 10vh;
                         width: 100%;
                         text-align: center;
@@ -378,7 +423,8 @@ html{
                         transition: $trans2;
                         // background-color: red;
 
-                        .top,.bottom{
+                        .top,
+                        .bottom {
                             color: black;
                             text-align: center;
                             align-items: center;
@@ -386,18 +432,18 @@ html{
                             margin: .5rem 0;
                         }
 
-                        .top{
+                        .top {
                             font-size: 2rem;
                             font-weight: 600;
                         }
 
-                        .bottom{
+                        .bottom {
                             color: rgba(255, 0, 0, 0.597);
                             line-height: 1rem;
                         }
                     }
 
-                    .hoverButtonBox{
+                    .hoverButtonBox {
                         height: 3rem;
                         // background-color: red;
                         width: 100%;
@@ -407,24 +453,24 @@ html{
                         opacity: 0;
                         transition: $trans2;
 
-                        & button{
+                        & button {
                             height: 100%;
                             width: 32%;
                             border: .1rem solid rgba(255, 0, 0, 0.436);
                             transition: $trans1;
 
-                            & a{
+                            & a {
                                 text-decoration: none;
                                 color: rgba(0, 0, 0, 0.668);
-                                font-size:x-large;
+                                font-size: x-large;
                                 transition: $trans2;
                             }
 
-                            &:hover{
+                            &:hover {
                                 background: rgba(255, 0, 0, 0.696);
                                 transition: $trans2;
 
-                                & a{
+                                & a {
                                     color: white;
                                     transition: $trans1;
                                 }
@@ -432,22 +478,22 @@ html{
                         }
                     }
 
-                    &:hover{
+                    &:hover {
                         transition: $trans2;
                         box-shadow: .3rem .2rem 1rem rgba(201, 198, 198, 0.874);
 
-                        & img{
+                        & img {
                             opacity: 0.1;
                             transition: $trans2;
                         }
 
-                        & .hoverDivBox{
+                        & .hoverDivBox {
                             opacity: 1;
                             transition: $trans2;
                             top: 20%;
                         }
 
-                        & .hoverButtonBox{
+                        & .hoverButtonBox {
                             opacity: 1;
                             bottom: 20%;
                             transition: $trans2;
@@ -460,45 +506,41 @@ html{
 
 }
 
-//resume
-.section4{
-    background-color: white;
-}
-
 //contact
-.section5{
+.section5 {
     height: 100vh;
     background-color: #252934;
-    color: white;  
+    // color: white;
 
-    .headerbox{
+    .headerbox {
         margin-top: 1rem;
-        @include titleCss(white,white);
+        @include titleCss(white, white);
     }
 
-    .ask{
+    .ask {
         height: 4rem;
         margin-top: 1.5rem;
         @include flex_center();
 
-        & p{
+        & p {
             margin: 0;
             color: cyan;
         }
     }
 
-    .formbox{
+    .formbox {
         height: 50%;
         width: 100%;
         @include flex_center();
 
-        .formContainer{
+        .formContainer {
             margin-top: 3rem;
             height: 100%;
             width: 35%;
             // background-color: yellow;
 
-            & input,textarea{
+            & input,
+            textarea {
                 width: 100%;
                 border-radius: 0;
                 border: none;
@@ -507,39 +549,40 @@ html{
                 font-size: 1rem;
 
 
-                &:focus{
+                &:focus {
                     border: none;
                     outline: none;
                 }
             }
-            
-            & input{
+
+            & input {
                 height: 6vh;
                 margin-top: .2rem;
             }
 
-            & textarea{
+            & textarea {
                 height: 25vh;
                 margin-top: .2rem;
                 padding-top: .5rem;
             }
         }
 
-        .btnBox{
+        .btnBox {
             margin-top: .3rem;
             height: 5.5Vh;
             // background-color: green;
             text-align: right;
 
-            & button{
+            & button {
                 height: 100%;
                 background-color: transparent;
                 border: .1rem solid white;
                 width: 25%;
                 font-size: 1.2rem;
                 transition: $trans2;
+                color: white;
 
-                &:hover{
+                &:hover {
                     background-color: cyan;
                     border: .1rem solid cyan;
                     transition: $trans2;
@@ -550,20 +593,22 @@ html{
 }
 
 //footer
-.footerBox{
+.footerBox {
     height: 25vh;
     background-color: #181f29;
     position: relative;
     padding-top: 3.4rem;
+    color: white;
 
-    .upLinkBox{
+
+    .upLinkBox {
         @include flex_center();
         height: 6vh;
         width: 100%;
         position: absolute;
         top: -12.5%;
 
-        & button{
+        & button {
             height: 100%;
             width: 3.5rem;
             border: none;
@@ -571,8 +616,8 @@ html{
             @include flex_center();
             transform: rotate(90deg);
             // padding-top: .25rem;
-            
-            i{
+
+            i {
                 color: white;
                 font-size: 2rem;
                 transform: rotate(270deg);
@@ -580,32 +625,34 @@ html{
         }
     }
 
-    .socialLinkBox{
+    .socialLinkBox {
         height: 8vh;
         width: 100%;
         padding: 0 20rem;
         // background-color: red;
         @include flex_center();
 
-        .box{
+        .box {
             // background-color: white;
             margin: 0 2rem;
             // border-radius: 2rem;
 
-            i{
+            i {
                 font-size: 3rem;
+                color: white;
+
             }
 
-            
+
         }
     }
 
-    .copyrightBox{
+    .copyrightBox {
         text-align: center;
         margin-top: 1.3rem;
     }
 
-    .copyrightBox span{
+    .copyrightBox span {
         color: #e31b6ec3;
     }
 }

@@ -10,8 +10,9 @@ export default function Home() {
         <div className="homeMain_box">
           <div className="mid">
             <p>
-              Hello, I am <span>Priyansh Pandey</span>.<br />
-              I'm a full-stack web developer.
+              Hello, I am <span>Priyansh Pandey</span>
+                <br />
+              I'm a <span className="typeHome">full-stack web developer. </span>
             </p>
             <div className="project_btn">
               <button className="myWorkBtn">

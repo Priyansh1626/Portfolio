@@ -61,7 +61,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans", sans-serif;
-  color: white;
 }
 
 html {
@@ -138,10 +137,38 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  overflow: hidden;
+}
+.homeBody .typeHome {
+  position: relative;
+}
+.homeBody .typeHome::after {
+  content: "";
+  position: absolute;
+  left: -0.5%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  border-left: 0.2rem solid #e31b6d;
+  -webkit-animation: typing 3s ease-in-out infinite alternate;
+          animation: typing 3s ease-in-out infinite alternate;
+}
+@-webkit-keyframes typing {
+  100% {
+    left: 101%;
+  }
+}
+@keyframes typing {
+  100% {
+    left: 101%;
+  }
 }
 .homeBody .homeMain_box {
   height: 50vh;
   width: 50%;
+  overflow: hidden;
   text-align: center;
   margin-top: 4rem;
   display: flex;
@@ -151,6 +178,7 @@ html {
 .homeBody .homeMain_box span {
   color: #e31b6d;
   font-family: "Roboto Slab";
+  overflow: hidden;
 }
 .homeBody .homeMain_box p {
   font-size: 2.7rem;
@@ -358,10 +386,17 @@ html {
 }
 .section3 .clr {
   height: 100%;
-  background-color: rgba(238, 238, 238, 0.736);
-  padding-bottom: 13rem;
+  background-color: #252934;
+  -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 2%, 100% 2%, 100% 100%, 0% 100%);
+  padding-top: -2rem;
+}
+.section3 .clr2 {
+  background-color: rgba(255, 255, 255, 0.93);
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
           clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  padding-bottom: 13rem;
+  height: 100%;
 }
 .section3 .allinProject {
   height: 100%;
@@ -401,7 +436,8 @@ html {
   opacity: 0;
   transition: all 0.2s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .top, .section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
+.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .top,
+.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
   color: black;
   text-align: center;
   align-items: center;
@@ -466,14 +502,9 @@ html {
   transition: all 0.2s linear;
 }
 
-.section4 {
-  background-color: white;
-}
-
 .section5 {
   height: 100vh;
   background-color: #252934;
-  color: white;
 }
 .section5 .headerbox {
   margin-top: 1rem;
@@ -518,7 +549,8 @@ html {
   height: 100%;
   width: 35%;
 }
-.section5 .formbox .formContainer input, .section5 .formbox .formContainer textarea {
+.section5 .formbox .formContainer input,
+.section5 .formbox .formContainer textarea {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -526,7 +558,8 @@ html {
   padding: 0 0.7rem;
   font-size: 1rem;
 }
-.section5 .formbox .formContainer input:focus, .section5 .formbox .formContainer textarea:focus {
+.section5 .formbox .formContainer input:focus,
+.section5 .formbox .formContainer textarea:focus {
   border: none;
   outline: none;
 }
@@ -551,6 +584,7 @@ html {
   width: 25%;
   font-size: 1.2rem;
   transition: all 0.2s linear;
+  color: white;
 }
 .section5 .formbox .btnBox button:hover {
   background-color: cyan;
@@ -563,6 +597,7 @@ html {
   background-color: #181f29;
   position: relative;
   padding-top: 3.4rem;
+  color: white;
 }
 .footerBox .upLinkBox {
   display: flex;
@@ -601,6 +636,7 @@ html {
 }
 .footerBox .socialLinkBox .box i {
   font-size: 3rem;
+  color: white;
 }
 .footerBox .copyrightBox {
   text-align: center;

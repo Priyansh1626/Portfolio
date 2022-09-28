@@ -11,7 +11,6 @@ import Navbar from "./components/Navbar";
 import "./main.js";
 import Footer from "./components/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
-import Resume from "./components/Resume";
 
 export default function App() {
   return (
@@ -21,7 +20,6 @@ export default function App() {
       <BackToTopBtn />
       <About />
       <Projects />
-      <Resume />
       <Contact />
       <Footer />
     </>

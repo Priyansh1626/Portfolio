@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "./Data/Resume_5thSem.pdf";
 
 export default function Navbar() {
   return (
@@ -28,8 +29,8 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav_link">
-            <a href="#resume" className="">
-              Ressume
+            <a href={resume} className="" download="resume">
+              Resume
             </a>
           </li>
           <li className="nav_link">
