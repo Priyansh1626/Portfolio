@@ -78,9 +78,6 @@ html {
 .header_container {
   height: 4rem;
   background-color: #181f29;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
   border-bottom: 0.2rem solid cyan;
@@ -89,9 +86,8 @@ html {
   left: 0;
   width: 100%;
   height: 4rem;
-  display: none;
   opacity: 0;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
   z-index: 100;
 }
 .header_container label i {
@@ -104,6 +100,9 @@ html {
   align-items: center;
   list-style: none;
   margin-right: 1rem;
+}
+.header_container .navbar_links .nav_link .activeNav {
+  color: #e31b6d;
 }
 .header_container .navbar_links .nav_link a {
   font-size: 1.3rem;
@@ -142,27 +141,40 @@ html {
 }
 .homeBody .typeHome {
   position: relative;
+  border-bottom: 0.2rem solid #e31b6d;
+  padding-bottom: -2rem;
 }
-.homeBody .typeHome::after {
+.homeBody .typeHome::before {
   content: "";
   position: absolute;
   left: -0.5%;
-  top: 0;
-  height: 100%;
+  bottom: -19%;
+  height: 20%;
   width: 100%;
   background: black;
-  border-left: 0.2rem solid #e31b6d;
-  -webkit-animation: typing 3s ease-in-out infinite alternate;
-          animation: typing 3s ease-in-out infinite alternate;
+  -webkit-animation: underline 3s ease-in-out infinite alternate;
+          animation: underline 3s ease-in-out infinite alternate;
 }
-@-webkit-keyframes typing {
+@-webkit-keyframes underline {
+  0% {
+    left: 5%;
+  }
+  45% {
+    left: 40%;
+  }
   100% {
-    left: 101%;
+    left: 100%;
   }
 }
-@keyframes typing {
+@keyframes underline {
+  0% {
+    left: 5%;
+  }
+  45% {
+    left: 40%;
+  }
   100% {
-    left: 101%;
+    left: 100%;
   }
 }
 .homeBody .homeMain_box {

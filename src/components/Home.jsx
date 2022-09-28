@@ -11,8 +11,8 @@ export default function Home() {
           <div className="mid">
             <p>
               Hello, I am <span>Priyansh Pandey</span>
-                <br />
-              I'm a <span className="typeHome">full-stack web developer. </span>
+              <br />
+              I'm a <span className="typeHome">full-stack</span> web developer.
             </p>
             <div className="project_btn">
               <button className="myWorkBtn">
