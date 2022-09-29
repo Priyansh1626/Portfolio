@@ -6,7 +6,7 @@ export default function Home() {
     <>
       {/* <div className="home_bg_image" id="section1"></div> */}
       <Particle />
-      <div className="homeBody" id="home">
+      <section className="homeBody" id="home">
         <div className="homeMain_box">
           <div className="mid">
             <p>
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

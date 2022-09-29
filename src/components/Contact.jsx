@@ -5,7 +5,7 @@ import Title from "./Title";
 export default function Contact() {
   return (
     <>
-      <div className="section5" id="contact">
+      <section className="section5" id="contact">
         <br />
         <br />
         <br />
@@ -14,7 +14,7 @@ export default function Contact() {
           <p>Have a question or want to work together?</p>
         </div>
         <Contactform />
-      </div>
+      </section>
     </>
   );
 }

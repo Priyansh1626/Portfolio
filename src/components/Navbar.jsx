@@ -13,27 +13,27 @@ export default function Navbar() {
           <i className="fas fa-bars"></i>
         </label>
         <ul className="navbar_links">
-          <li className="nav_link">
-            <a href="#home" id="actHome" className="">
+          <li className="nav_link active home">
+            <a href="#home" id="actHome">
               Home
             </a>
           </li>
-          <li className="nav_link">
+          <li className="nav_link about">
             <a href="#about" id="actAbout">
               About
             </a>
           </li>
-          <li className="nav_link">
+          <li className="nav_link projects">
             <a href="#projects" id="actProjects">
               Projects
             </a>
           </li>
-          <li className="nav_link">
+          <li className="nav_link contact">
             <a href="#contact" id="actContact">
               Contact
             </a>
           </li>
-          <li className="nav_link">
+          <li className="nav_link resume">
             <a href={resume} id="actResume" download="resume">
               Resume
             </a>

@@ -6,7 +6,7 @@ import projectCardData from "./ProjectCardData";
 export default function Projects() {
   return (
     <>
-      <div className="section3" id="projects">
+      <section className="section3" id="projects">
         <div className="clr">
           <div className="clr2">
             <div className="allinProject">
@@ -34,7 +34,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

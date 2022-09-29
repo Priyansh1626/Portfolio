@@ -101,6 +101,12 @@ html {
   list-style: none;
   margin-right: 1rem;
 }
+.header_container .navbar_links .nav_link {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .header_container .navbar_links .nav_link .activeNav {
   color: #e31b6d;
 }
@@ -119,13 +125,17 @@ html {
   content: "";
   width: 100%;
   position: absolute;
-  bottom: -0.4rem;
+  bottom: -0.1rem;
   left: 0;
   border-bottom: 0.1rem solid red;
   transition: all 0.2s linear;
 }
 .header_container .navbar_links .nav_link a:active {
   color: rgba(255, 255, 255, 0.781);
+}
+.header_container .navbar_links .active a {
+  color: cyan;
+  transition: all 0.2s linear;
 }
 .header_container input {
   display: none;

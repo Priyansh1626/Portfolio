@@ -7,7 +7,7 @@ import Priyansh_Image from "../images/Priyansh_Image.jpeg";
 export default function About() {
   return (
     <>
-      <div className="section2" id="about">
+      <section className="section2" id="about">
         <div className="abtclr">
           <br />
           <br />
@@ -58,7 +58,7 @@ export default function About() {
             <div className="right"></div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

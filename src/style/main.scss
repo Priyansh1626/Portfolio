@@ -55,6 +55,9 @@ html {
 
         .nav_link {
 
+            height: 5vh;
+            @include flex_center();
+
             .activeNav{
                 color: #e31b6d;
                 // color: white;
@@ -75,7 +78,7 @@ html {
                         content: '';
                         width: 100%;
                         position: absolute;
-                        bottom: -.4rem;
+                        bottom: -.1rem;
                         left: 0;
                         border-bottom: .1rem solid red;
                         transition: $trans2;
@@ -85,6 +88,14 @@ html {
                 &:active {
                     color: rgba(255, 255, 255, 0.781);
                 }
+            }
+        }
+
+        .active{
+            // background-color: white;
+            & a{
+                color: cyan;
+                transition: $trans2;
             }
         }
     }

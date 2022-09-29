@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="footerBox" id="section5">
+      <section className="footerBox" id="section5">
         <div className="upLinkBox">
           <button onClick={goToTop}>
             <i className="fa-solid fa-angles-up"></i>
@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="copyrightBox">
           Priyansh Pandey <span> &copy; 2022 </span>
         </div>
-      </div>
+      </section>
     </>
   );
 }
