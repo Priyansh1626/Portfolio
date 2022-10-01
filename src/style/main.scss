@@ -25,6 +25,10 @@ html {
     height: 4rem;
 }
 
+.flex{
+    @include flex_center();
+}
+
 //navbar
 .header_container {
     height: 4rem;
@@ -57,6 +61,7 @@ html {
 
             height: 5vh;
             @include flex_center();
+            margin: 0 .2rem;
 
             .activeNav{
                 color: #e31b6d;
@@ -313,7 +318,7 @@ html {
         margin-top: 3rem;
         height: 75vh;
         width: 100%;
-        // background-color: red;
+        // background-color: red;  
         @include flex-center();
 
         .left_Box {
@@ -327,7 +332,7 @@ html {
         & .left {
             width: 40vw;
             margin-left: 3rem;
-            // margin-top: 1rem;
+            margin-top: 1rem;
             // background-color: pink;
             height: 100%;
             @include flex-center();
@@ -342,6 +347,7 @@ html {
                 & img {
                     height: 20rem;
                     width: 20rem;
+                    // background-color: white;
                     // border: .2rem solid rgba(0, 0, 0, 0.722);
                     clip-path: polygon(23% 0, 77% 0, 100% 50%, 78% 100%, 22% 100%, 0% 50%);
                 }
@@ -379,9 +385,69 @@ html {
 
         & .right {
             width: 60%;
-            background-color: yellow;
             height: 100%;
-            @include flex-center();
+
+            .rightBox{
+                width: 85%;
+                padding: .4rem;
+
+                .abtHeading{
+                    
+                    & p{
+                        display: inline-block;
+                        font-weight: 600;
+                        position: relative;
+                        font-size: 1.7rem;
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            border-bottom: .2rem solid rgba(0, 255, 255, 0.729);
+                            width: 49%;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+                }
+
+                p{
+                    text-align: justify;
+                    font-size: 1.2rem;
+                }
+
+                .abtData{
+                    @include flex_center(space-between);
+
+                    .abtDataContainer{
+                        margin: 1rem;
+                        @include flex_center(flex-start);
+                        
+                        & .icon{
+                            height: 2rem;
+                            margin-right: .5rem;
+                        }
+                        
+                        & .heading{
+                            // background-color: red;
+                            font-size: 3rem;
+
+                            & h4{
+                                // font-weight: 600;
+                                font-size: 1.7rem;
+                            }
+
+                        }
+                        
+                        & .desc{
+                            height: 2rem;
+                            margin-left: .3rem;
+                            & p{
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -398,27 +464,19 @@ html {
 
     .clr {
         height: 100%;
-        // background-color: rgba(238, 238, 238, 0.736);
-        // padding-top: -2rem;
         background-color: #252934;
-        // background-color: white;
         clip-path: polygon(0 2%, 100% 2%, 100% 100%, 0% 100%);
-        // background-color:red; 
-
         padding-top: -2rem;
     }
 
     .clr2 {
         background-color: rgba(255, 255, 255, 0.93);
-        // background-color: red;
         clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
         padding-bottom: 13rem;
         height: 100%;
     }
 
     .allinProject {
-        // background-color: rgba(210, 210, 210, 0.284);
-        // background-color: green;
         height: 100%;
 
         .project_main_box {
@@ -581,7 +639,7 @@ html {
                 background-color: #1e242c;
                 padding: 0 .7rem;
                 font-size: 1rem;
-
+                color: white;
 
                 &:focus {
                     border: none;
@@ -606,6 +664,7 @@ html {
             height: 5.5Vh;
             // background-color: green;
             text-align: right;
+            @include flex_center(space-between);
 
             & button {
                 height: 100%;
@@ -615,6 +674,11 @@ html {
                 font-size: 1.2rem;
                 transition: $trans2;
                 color: white;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
 
                 &:hover {
                     background-color: cyan;

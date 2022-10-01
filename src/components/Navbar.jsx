@@ -5,9 +5,6 @@ export default function Navbar() {
   return (
     <>
       <header className="container-fluid header_container">
-        {/* <div className="brand_name">
-          <a href="#section1">PRIYANSH PANDEY</a>
-        </div> */}
         <input type="checkbox" className="main_menu_btn" id="menu_btn" />
         <label htmlFor="menu_btn" className="main-menu_icon">
           <i className="fas fa-bars"></i>
@@ -33,11 +30,11 @@ export default function Navbar() {
               Contact
             </a>
           </li>
-          <li className="nav_link resume">
+          {/* <li className="nav_link resume">
             <a href={resume} id="actResume" download="resume">
               Resume
             </a>
-          </li>
+          </li> */}
         </ul>
       </header>
     </>

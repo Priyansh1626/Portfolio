@@ -3,8 +3,7 @@ window.onscroll = () => {
     let sections = document.querySelectorAll('section');
     let navli = document.querySelectorAll('.nav_link');
     let top = window.scrollY;
-    console.log(top);
-    if (top < 710) {
+    if (top < 650) {
         header.style.opacity = 0;
     }
     else {
@@ -14,7 +13,7 @@ window.onscroll = () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (top >= (sectionTop - sectionHeight / 4)) {
+        if (top >= (sectionTop - sectionHeight / 2)) {
             current = section.getAttribute('id');
         }
     })
@@ -25,5 +24,3 @@ window.onscroll = () => {
         }
     })
 };
-
-
