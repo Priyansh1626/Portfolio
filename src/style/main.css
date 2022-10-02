@@ -299,13 +299,13 @@ html {
   background-color: white;
 }
 .section2 .abtclr {
+  padding-bottom: 2rem;
   background-color: white;
-  padding-bottom: 5rem;
   box-shadow: 0.5rem 0.3rem 0.4rem black;
 }
 .section2 .hexa_About_box {
   height: 40vh;
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,7 +344,6 @@ html {
 }
 .section2 .main_about_box {
   margin-top: 3rem;
-  height: 75vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -456,19 +455,52 @@ html {
   font-size: 1.2rem;
 }
 
+.skillsBox {
+  background-color: rgba(227, 226, 226, 0.548);
+}
+.skillsBox .bgSkill {
+  background-color: #252934;
+}
+.skillsBox .bgSkill2 {
+  background-color: rgba(255, 255, 255, 0.93);
+}
+.skillsBox .skillContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsBox .skillContainer .filterBox .filterBtn {
+  width: 10vw;
+}
+.skillsBox .filterDataBox {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsBox .filterDataBox .filterDataContainer {
+  height: 30vh;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+}
+.skillsBox .filterDataBox .card {
+  height: 100%;
+  width: 20rem;
+}
+
 .section3 {
   height: 100%;
-  background-color: white;
 }
 .section3 .clr {
   height: 100%;
   background-color: #252934;
-  -webkit-clip-path: polygon(0 2%, 100% 2%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 2%, 100% 2%, 100% 100%, 0% 100%);
-  padding-top: -2rem;
 }
 .section3 .clr2 {
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: white;
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
           clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
   padding-bottom: 13rem;

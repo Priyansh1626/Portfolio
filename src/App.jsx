@@ -11,6 +11,7 @@ import Navbar from "./components/Navbar";
 import "./main.js";
 import Footer from "./components/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
+import Skill from "./components/Skill";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Navbar />
       <BackToTopBtn />
       <About />
+      <Skill />
       <Projects />
       <Contact />
       <Footer />

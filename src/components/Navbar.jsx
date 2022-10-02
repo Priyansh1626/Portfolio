@@ -20,6 +20,11 @@ export default function Navbar() {
               About
             </a>
           </li>
+          <li className="nav_link skill">
+            <a href="#skill" id="actSkill">
+              Skills
+            </a>
+          </li>
           <li className="nav_link projects">
             <a href="#projects" id="actProjects">
               Projects
