@@ -13,10 +13,9 @@ export default function Projects() {
               <br />
               <br />
               <br />
-              <br />
               <Title title="PROJECTS" />
               <div className="project_main_box container">
-                <div className="row p-3">
+                <div className="row m-0 p-0">
                   {projectCardData.map((currElm) => {
                     return (
                       <ProjectCard

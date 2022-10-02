@@ -45,7 +45,7 @@ html {
     // display: none;
     opacity: 0;
     transition: $trans2;
-    z-index: 100;
+    z-index: 1000;
 
     label i {
         display: none;
@@ -454,53 +454,126 @@ html {
 
 //skills
 .skillsBox{
-    background-color: rgba(227, 226, 226, 0.548);
-
+    box-shadow: .5rem .3rem .4rem black;
+    background-color: white;
+    position: relative;
+    
     .bgSkill{
         background-color: #252934;
+        // background-color: red;
     }
-
+    
     .bgSkill2{
         background-color: rgba(255, 255, 255, 0.93);
-
+        padding-bottom: 5rem;
     }
 
-    .skillContainer{
-        margin-top: 2rem;
+    .filterContainer{
         @include flex_center();
+        // background-color: red;
+        margin: 3rem 15rem 0 15rem;
+
 
         & .filterBox{
-            // display: block;
 
             .filterBtn{
+                border: none;
                 width: 10vw;
+                margin: 0 3rem;
+                background-color: red;
+                color: white;
+                font-size:1.4rem;
             }
         }
     }
 
     .filterDataBox{
+        height: 50vh;
+        width: 100%;
+        @include flex_center();
+        overflow-y: hidden;
+        padding-left: 37.5rem;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        .cardContainer{
+            height: 50vh;
+            width: 23vw;
+            // margin-top: 1rem;
+            // background-color: red;
+            padding: 0 1rem;
+            @include flex_center();
+            flex-direction: column;
+
+            .card{
+                height: 35vh;
+                width: 21vw;
+                margin-top: -1rem;
+                // background-color: pink;
+                border: none;
+                border-radius: 25%;
+                transition: $trans2;
+            }
+
+            .cardName{
+                margin-top: -3rem;
+                font-size: 2rem;
+                opacity: 0;
+                transition: $trans3;
+
+            }
+
+            &:hover{
+
+                .card{
+                    transform: translateY(-.6rem);
+                    transition: $trans2;
+                }
+
+                .cardName{
+                    transform: translateY(3.5rem);
+                    opacity: 1;
+                    transition: $trans3;    
+
+                }
+            }
+        }
+    }
+
+    .skillAnimationBox{
         margin-top: 2rem;
+        height: 10vh;
+        // background-color: red;
         @include flex_center();
 
-        .filterDataContainer{
-            height: 30vh;
-            background-color: red;
-            @include flex_center(space-around);
-            width: 70vw;
+        & div{
+            height: 10vh;
+            width: 5vw;
+            background-color: cyan;
+            border-radius: 50%;
+            margin: 0 2rem;
+        }        
+    }
 
-        }
-
-        .card{
-            height: 100%;
-            width: 20rem;
-
-        }
+    .lineHide{
+        height: 2vh;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        bottom: -1%;
+        z-index: 200;
+        left: 0;
     }
 }
 
 //project
 .section3 {
     height: 100%;
+    // border: .3rem solid white;
+    // margin-top:-1rem ;
     // background-color: white;
     // background-color:#252934;
     // background-color:rgba(255, 255, 255, 0.467);

@@ -94,7 +94,7 @@ html {
   height: 4rem;
   opacity: 0;
   transition: all 0.2s linear;
-  z-index: 100;
+  z-index: 1000;
 }
 .header_container label i {
   display: none;
@@ -456,40 +456,98 @@ html {
 }
 
 .skillsBox {
-  background-color: rgba(227, 226, 226, 0.548);
+  box-shadow: 0.5rem 0.3rem 0.4rem black;
+  background-color: white;
+  position: relative;
 }
 .skillsBox .bgSkill {
   background-color: #252934;
 }
 .skillsBox .bgSkill2 {
   background-color: rgba(255, 255, 255, 0.93);
+  padding-bottom: 5rem;
 }
-.skillsBox .skillContainer {
-  margin-top: 2rem;
+.skillsBox .filterContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3rem 15rem 0 15rem;
 }
-.skillsBox .skillContainer .filterBox .filterBtn {
+.skillsBox .filterContainer .filterBox .filterBtn {
+  border: none;
   width: 10vw;
+  margin: 0 3rem;
+  background-color: red;
+  color: white;
+  font-size: 1.4rem;
 }
 .skillsBox .filterDataBox {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+  padding-left: 37.5rem;
+  overflow-x: scroll;
+}
+.skillsBox .filterDataBox::-webkit-scrollbar {
+  display: none;
+}
+.skillsBox .filterDataBox .cardContainer {
+  height: 50vh;
+  width: 23vw;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skillsBox .filterDataBox .cardContainer .card {
+  height: 35vh;
+  width: 21vw;
+  margin-top: -1rem;
+  border: none;
+  border-radius: 25%;
+  transition: all 0.2s linear;
+}
+.skillsBox .filterDataBox .cardContainer .cardName {
+  margin-top: -3rem;
+  font-size: 2rem;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.skillsBox .filterDataBox .cardContainer:hover .card {
+  transform: translateY(-0.6rem);
+  transition: all 0.2s linear;
+}
+.skillsBox .filterDataBox .cardContainer:hover .cardName {
+  transform: translateY(3.5rem);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+.skillsBox .skillAnimationBox {
   margin-top: 2rem;
+  height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.skillsBox .filterDataBox .filterDataContainer {
-  height: 30vh;
-  background-color: red;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 70vw;
+.skillsBox .skillAnimationBox div {
+  height: 10vh;
+  width: 5vw;
+  background-color: cyan;
+  border-radius: 50%;
+  margin: 0 2rem;
 }
-.skillsBox .filterDataBox .card {
-  height: 100%;
-  width: 20rem;
+.skillsBox .lineHide {
+  height: 2vh;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: -1%;
+  z-index: 200;
+  left: 0;
 }
 
 .section3 {

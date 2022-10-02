@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "./Title";
+import SkillCard from "./SkillCard";
 
 export default function Skill() {
   return (
@@ -9,8 +10,9 @@ export default function Skill() {
           <div className="bgSkill2">
             <br />
             <br />
+            <br />
             <Title title="SKILLS" />
-            <div className="skillContainer">
+            <div className="filterContainer">
               <div className="filterBox">
                 <button className="All filterBtn">All</button>
                 <button className="frontEnd filterBtn">FrontEnd</button>
@@ -18,12 +20,19 @@ export default function Skill() {
               </div>
             </div>
             <div className="filterDataBox">
-              <div className="filterDataContainer">
-                <div className="card"></div>
-                <div className="card"></div>
-                <div className="card"></div>
-              </div>
+              <SkillCard language="Node" />
+              <SkillCard language="Node" />
+              <SkillCard language="Node" />
+              <SkillCard language="Node" />
+              <SkillCard language="Node" />
+              <SkillCard language="Node" />
             </div>
+            <div className="skillAnimationBox">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="lineHide"></div>
           </div>
         </div>
       </section>
