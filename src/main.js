@@ -24,3 +24,13 @@ window.onscroll = () => {
         }
     })
 };
+
+// let filterDataBox = document.querySelector(".filterDataBox");
+
+// const startScroll = () => {
+//     setInterval(() => {
+//         filterDataBox.scrollBy(2, 0);
+//     }, 10);
+// }
+
+// startScroll();

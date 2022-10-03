@@ -381,12 +381,13 @@ html {
 .section2 .main_about_box .left .title {
   height: 3rem;
   text-align: center;
+  margin-top: 0.8rem;
   font-size: 2rem;
   color: rgb(2, 2, 2);
 }
 .section2 .main_about_box .left .desc {
   height: 9rem;
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
   width: 115%;
   display: flex;
   justify-content: center;
@@ -477,18 +478,20 @@ html {
   border: none;
   width: 10vw;
   margin: 0 3rem;
-  background-color: red;
-  color: white;
   font-size: 1.4rem;
 }
+.skillsBox .filterContainer .filterBox .activeFilterBtn {
+  background-color: red;
+  color: white;
+}
 .skillsBox .filterDataBox {
+  margin-top: 0.5rem;
   height: 50vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-y: hidden;
-  padding-left: 37.5rem;
   overflow-x: scroll;
 }
 .skillsBox .filterDataBox::-webkit-scrollbar {
@@ -510,6 +513,22 @@ html {
   border: none;
   border-radius: 25%;
   transition: all 0.2s linear;
+}
+.skillsBox .filterDataBox .cardContainer .card .imgBoxShape {
+  height: 100%;
+  width: 100%;
+  border-radius: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsBox .filterDataBox .cardContainer .card .imgBoxShape img {
+  height: 90%;
+  width: 80%;
+  border-radius: 10%;
+}
+.skillsBox .filterDataBox .cardContainer .card:hover {
+  box-shadow: 0 0 1rem cyan;
 }
 .skillsBox .filterDataBox .cardContainer .cardName {
   margin-top: -3rem;

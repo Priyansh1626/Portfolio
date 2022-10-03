@@ -76,13 +76,13 @@ export default function About() {
                 </p>
                 <div className="abtData">
                   <div className="abtLeft">
-                    <AboutDataTD title="Birthday" desc="16 May 2002" />
+                    <AboutDataTD title="Name" desc="Priyansh Pandey" />
                     <AboutDataTD title="Age" desc={age} />
                     <AboutDataTD title="Phone" desc="+91 7987071870" />
                   </div>
                   <div className="abtRight">
-                    <AboutDataTD title="Degree" desc="Major in cse" />
                     <AboutDataTD title="Email" desc="2028186@kiit.ac.in" />
+                    <AboutDataTD title="Degree" desc="Major in cse" />
                     <AboutDataTD title="Freelance" desc="Available" />
                   </div>
                 </div>
