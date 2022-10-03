@@ -3,10 +3,24 @@ import Title from "./Title";
 import skillData from "./SkillData";
 import SkillCard from "./SkillCard";
 
+const allCatValues = [
+  ...new Set(
+    skillData.map((curr) => {
+      return curr.category;
+    })
+  ),
+  "All",
+];
+
 export default function Skill() {
   const [item, setItem] = useState(skillData);
+  const [catItems, setCatItems] = useState(allCatValues);
 
   const filterItem = (categItem) => {
+    if (categItem === "All") {
+      setItem(skillData);
+      return;
+    }
     const updatedItems = skillData.filter((elem) => {
       return elem.category === categItem;
     });
@@ -24,24 +38,17 @@ export default function Skill() {
             <Title title="SKILLS" />
             <div className="filterContainer">
               <div className="filterBox">
-                <button
-                  className="frontEnd filterBtn"
-                  onClick={() => filterItem("frontEnd")}
-                >
-                  FrontEnd
-                </button>
-                <button
-                  className="BackEnd filterBtn"
-                  onClick={() => filterItem("backEnd")}
-                >
-                  BackEnd
-                </button>
-                <button
-                  className="All filterBtn"
-                  onClick={() => setItem(skillData)}
-                >
-                  All
-                </button>
+                {catItems.map((curr, index) => {
+                  return (
+                    <button
+                      key={index}
+                      className="filterBtn"
+                      onClick={() => filterItem(curr)}
+                    >
+                      {curr}
+                    </button>
+                  );
+                })}
               </div>
             </div>
             <div className="filterDataBox">
@@ -55,11 +62,11 @@ export default function Skill() {
                 );
               })}
             </div>
-            <div className="skillAnimationBox">
+            {/* <div className="skillAnimationBox">
               <div></div>
               <div></div>
               <div></div>
-            </div>
+            </div> */}
             <div className="lineHide"></div>
           </div>
         </div>

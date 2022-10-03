@@ -1,8 +1,9 @@
 import React from "react";
-import About_hexagon from "./About_hexagon";
+import AboutHexagon from "./AboutHexagon";
 import Title from "./Title";
 import aboutHexData from "./AaboutHexData";
 import Priyansh_Image from "../images/Priyansh_Image.jpeg";
+import resume from "./Data/Resume_5thSem.pdf";
 import AboutDataTD from "./AboutDataTD";
 
 export default function About() {
@@ -20,7 +21,7 @@ export default function About() {
           <div className="hexa_About_box">
             {aboutHexData.map((elem, index) => {
               return (
-                <About_hexagon
+                <AboutHexagon
                   key={elem.id}
                   img={elem.img}
                   title={elem.title}
@@ -65,14 +66,12 @@ export default function About() {
                   <p>Full-Stack Developer</p>
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Eveniet possimus, vel quasi sint corrupti ratione eaque.
-                  Officiis ex, deserunt totam inventore excepturi explicabo
-                  commodi rerum voluptatem iste velit deleniti ipsam? Repellat
-                  excepturi recusandae possimus distinctio corporis! Atque
-                  doloremque modi veniam, optio magni nam corrupti. Iure ipsum
-                  adipisci ab quisquam odio. Quam molestiae dolores id repellat
-                  consequatur.
+                  I am passionate about building websites that can solve
+                  real-world challenges faced by individual or organisations.
+                  Beside my college studies I am trying to build different
+                  projects to grab my hand in Web Development. Being a begginer
+                  I am sure that I can build fast,working,dynamic and responsive
+                  websites. Currently my focus is on BackEnd Development.
                 </p>
                 <div className="abtData">
                   <div className="abtLeft">
@@ -87,8 +86,14 @@ export default function About() {
                   </div>
                 </div>
                 <p>
-                  My focus is on Natural Language Processing and its applied
-                  tasks in question-answering systems and information retrieval.
+                  You can download my{" "}
+                  <span style={{ color: "#e31b6d" }}> resume </span> using the
+                  link &gt; {` `}
+                  <button>
+                    <a href={resume} download="resume">
+                      Resume
+                    </a>
+                  </button>
                 </p>
               </div>
             </div>

@@ -1,9 +1,6 @@
 import React from "react";
-import resume from "./Data/Resume_5thSem.pdf";
 
 export default function Contactform() {
-  const removeAll = () => {};
-
   return (
     <>
       <div className="formbox">
@@ -34,11 +31,6 @@ export default function Contactform() {
             />
             <div className="btnBox">
               <button type="submit">Submit</button>
-              <button>
-                <a href={resume} download="resume">
-                  Resume
-                </a>
-              </button>
             </div>
           </form>
         </div>
