@@ -62,11 +62,6 @@ export default function Skill() {
                 );
               })}
             </div>
-            {/* <div className="skillAnimationBox">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div> */}
             <div className="lineHide"></div>
           </div>
         </div>

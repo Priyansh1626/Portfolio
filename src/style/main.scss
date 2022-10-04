@@ -386,10 +386,11 @@ html {
     .filterContainer{
         @include flex_center();
         // background-color: red;
-        margin: 3.5rem 15rem 0 15rem;
-
+        margin: 3.5rem 0 0 0;
+        width: 100%;
 
         & .filterBox{
+            // background-color: red;
 
             .filterBtn{
                 border: none;
