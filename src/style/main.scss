@@ -15,6 +15,7 @@
 
 html {
     scroll-behavior: smooth;
+    // font-size: 62.5%;
 }
 
 .sticky {
@@ -146,9 +147,9 @@ html {
 
     .homeMain_box {
         height: 50vh;
-        width: 50%;
+        width: 100vw;
         // background-color: red;
-        overflow: hidden;
+        // overflow: hidden;
         text-align: center;
         margin-top: 4rem;
         @include flex_center();
@@ -164,7 +165,7 @@ html {
         p {
             font-size: 2.7rem;
             line-height: 4rem;
-            font-family: 'Pt Serif', sans-serif;
+            // font-family: 'Pt Serif', sans-serif;
         }
 
         .project_btn {
@@ -179,8 +180,8 @@ html {
                 width: 13rem;
                 font-size: 1.3rem;
                 background-color: transparent;
-                border: .1rem solid cyan;
                 transition: $trans2;
+                border: .1rem solid cyan;
 
                 & a {
                     text-decoration: none;
@@ -249,225 +250,118 @@ html {
         background-color: white;
         // background-color: blue;
         box-shadow: .5rem .3rem .4rem black;
-        // background-color: rgba(210, 210, 210, 0.284);
-    }
 
-    .hexa_About_box {
-        // background-color: red;
-        height: 40vh;
-        margin-top: 2.5rem;
-        @include flex_center();
+        .abtLeft{
 
-        .hexbox {
-            height: 16rem;
-            width: 17vw;
-            padding: 0 .5rem;
-            @include flex_center(space-around, center);
-            flex-direction: column;
-            // background-color: pink;
-            text-align: center;
-            margin: 0 2rem;
+            .leftBox{
+                padding-left: 5rem;
 
-            .hexagon {
-                height: 7.5rem;
-                width: 8rem;
-                // background-color: cyan;
-                // border: .1rem solid rgba(0, 0, 0, 0.329);
-                // filter: drop-shadow(.1rem .2rem 1rem rgba(162, 161, 161, 0.786));
-                @include flex-center();
-                // clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-                // box-shadow: .1rem .2rem 1rem rgba(177, 177, 177, 0.496);
-
-                img {
-                    height: 6.5rem;
-                    width: 7rem;
-                }
-
-            }
-
-            .title {
-                margin-top: -.4rem;
-                font-size: 1.7rem;
-                color: rgba(0, 0, 0, 0.759);
-                font-weight: 600;
-                // background-color: yellow;
-            }
-
-            .desc {
-                font-size: 1rem;
-                color: black;
-            }
-        }
-    }
-
-    .main_about_box {
-        margin-top: 3rem;
-        // height: 75vh;
-        width: 100%;
-        // background-color: red;  
-        @include flex-center();
-
-        .left_Box {
-            @include flex_center(space-around);
-            flex-direction: column;
-            height: 100%;
-            width: 70%;
-            // background-color: yellow;
-        }
-
-        & .left {
-            width: 40vw;
-            margin-left: 3rem;
-            margin-top: 1rem;
-            // background-color: pink;
-            height: 100%;
-            @include flex-center();
-            flex-direction: column;
-            // background-color: green;
-
-            & .imgBox {
-                @include flex-center();
-                // background-color: green;
-                // margin-top: 2rem;
-
-                & img {
-                    height: 20rem;
-                    width: 20rem;
-                    // background-color: white;
-                    // border: .2rem solid rgba(0, 0, 0, 0.722);
-                    clip-path: polygon(23% 4%, 77% 4%, 100% 50%, 78% 98%, 22% 98%, 0% 50%);
-                }
-            }
-
-            & .title {
-                height: 3rem;
-                // background-color: pink;
-                text-align: center;
-                margin-top: .8rem;
-                font-size: 2rem;
-                color: rgb(2, 2, 2);
-            }
-
-            & .desc {
-                height: 9rem;
-                margin-top: -.5rem;
-                // background-color: grey;
-                width: 115%;
-                @include flex_center();
-                text-align: center;
-
-                & p {
-                    color: black;
-
-                    span {
-                        a {
-                            text-decoration: none;
-                            color: rgb(0, 42, 255);
-                        }
+                .imgBox{
+                     
+                    img{
+                        height: 45vh;
                     }
                 }
-            }
-        }
 
-        & .right {
-            width: 60%;
-            height: 100%;
+                .middleBox{
+                    margin-top: 1rem;
+                    font-size: 2rem;
+                }
 
-            .rightBox{
-                width: 85%;
-                padding: .4rem;
-
-                .abtHeading{
+                .bottomBox{
+                    // background-color: pink;
+                    // height: 15vh;
+                    margin-top: .3rem;
+                    @include flex_center();
                     
                     & p{
-                        display: inline-block;
+                        text-align: center;
+                        width: 32vw;
+                    }
+                }
+            }
+        }
+
+        .abtRight{
+                
+            .rightBox{
+
+                padding: 0 5rem 0 0;
+
+                .abtHeading{
+
+                    & p{
+                        font-size: 2rem;
                         font-weight: 600;
-                        position: relative;
-                        font-size: 1.9rem;
-
-                        &::after{
-                            content: "";
-                            position: absolute;
-                            border-bottom: .2rem solid rgba(0, 0, 0, 0.466);
-                            width: 49%;
-                            bottom: -.1rem;
-                            left: 0;
-                        }
                     }
                 }
 
-                p{
+                .abtPara{
+                    font-size: 1.3rem;
                     text-align: justify;
-                    font-size: 1.2rem;
-                }
 
-                .abtData{
-                    @include flex_center(space-between);
-
-                    .abtDataContainer{
-                        margin: 1rem;
-                        @include flex_center(flex-start);
-                        
-                        & .icon{
-                            height: 2rem;
-                            margin-right: .5rem;
-                        }
-                        
-                        & .heading{
-                            // background-color: red;
-                            // font-size: 1.4rem;
-
-                            & h4{
-                                font-weight: 600;
-                                font-size: 1.5rem;
-                            }
-
-                        }
-                        
-                        & .desc{
-                            height: 3rem;
-                            // background-color: red;
-                            margin-left: .3rem;
-                            margin-bottom:-.3rem;
-                            & p{
-                                font-size: 1.5rem;
-                            }
-                        }
-                    }
-                }
-
-                button{
-                    height: 3rem;
-                    width: 10vw;
-                    background-color: white;
-                    border-radius: 5rem;
-                    border: .1rem solid cyan;
-                    margin-left: 1.5rem;
-                    box-shadow: .3rem .3rem 1rem rgb(226, 220, 220);
-                    transition: $trans2;
-
-                    a{
-                        text-decoration: none;
-                        color: black;
-                    }
-
-                    &:hover{
-                        background-color: cyan;
+                    button{
+                        padding: .3rem 1.5rem;
+                        border: .1rem solid #e31b6d;
+                        border-radius: 5rem;
+                        background-color: white;
+                        margin-left: .4rem;
+                        box-shadow: .1rem .3rem .5rem rgb(230, 224, 224);
                         transition: $trans2;
 
                         a{
+                            text-decoration: none;
+                            color: #e31b6d;
+                        }
+
+                        &:hover{
+                            background-color: #e31b6d;
                             transition: $trans2;
-                            color: white;
+
+                            a{
+                                color: white;
+                                transition: $trans2;
+                            }
+                        }
+
+                        &:active{
+                            transform: translateY(.2rem);
                         }
                     }
+                }
 
-                    &:active{
-                        transform: translateY(.2rem);
-                        transition: $trans1;
+                .abtDataContainer{
+                    // background-color: pink;
+                    // @include flex_center();
+                    display: flex;
+                    height: 5vh;
+                    margin: .7rem 0 1rem 2rem;
+                    font-size:1.3rem;
+                    // @include flex_center();
+
+                    .icon{
+                        color: #e31b6d;
+                        // background-color: red;
                     }
+
+                    .heading{
+                        font-weight: bold;
+                        margin-left: .4rem;
+                    }
+
+                    .desc{
+                        margin: 0 0 0 .3rem;
+                        font-size: 1.35rem;
+                    }
+
+                }
+
+                .rightBtmPara{
+                    font-size: 1.3rem;
                 }
             }
         }
+
     }
 }
 

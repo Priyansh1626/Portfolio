@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectCard(prop) {
   return (
     <>
-      <div className="col-md-4 p-0">
+      <div className="col-lg-4 p-0">
         <div className="projectCard">
           <img src={prop.img} alt="" />
           <div className="hoverDivBox">
