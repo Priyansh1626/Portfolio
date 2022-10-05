@@ -1,9 +1,77 @@
 @media (max-width: 1270px) {
-    .hexa_About_box{
-        justify-content: space-around !important;
-        .hexBox{
-            width: 25vw !important;
-            margin: 0 .6rem;
+    // .hexa_About_box{
+    //     justify-content: space-around !important;
+    //     .hexBox{
+    //         width: 25vw !important;
+    //         margin: 0 .6rem;
+    //     }
+    // }
+}
+
+@media (max-width:992px)
+{
+    .homeMain_box{
+
+        .mid{
+            p{
+                font-size: 2.9rem !important;
+                // background-color: red;
+            }
+
+            .myWorkBtn{
+                width: 12rem !important;
+            }
         }
+    }
+}
+
+@media (max-width:768px)
+{
+    .homeMain_box{
+
+        .mid{
+            p{
+                font-size: 2.7rem !important;
+                // background-color: red;
+            }
+
+            .myWorkBtn{
+                width: 11.5rem !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width:670px) {
+
+    .homeBody{
+        height: 100vh !important;
+    }
+    .homeMain_box{
+
+        .mid{
+            p{
+                font-size: 2.4rem !important;
+                // background-color: red;
+            }
+
+            .myWorkBtn{
+                width: 11.5rem !important;
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .homeBody{
+        height: 100vh !important;
+    }
+}
+
+@media (max-width:540) {
+    html{
+        overflow-x: hidden;
     }
 }

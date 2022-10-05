@@ -163,13 +163,13 @@ html {
         }
 
         p {
-            font-size: 2.7rem;
+            font-size: 3rem;
             line-height: 4rem;
             // font-family: 'Pt Serif', sans-serif;
         }
 
         .project_btn {
-            height: 7vh;
+            // height: 7vh;
             // background-color: yellow;
             margin-top: 3rem;
             @include flex_center();
@@ -177,7 +177,7 @@ html {
             .myWorkBtn {
                 height: 3.5rem;
                 padding: .6rem;
-                width: 13rem;
+                width: 13rem;   
                 font-size: 1.3rem;
                 background-color: transparent;
                 transition: $trans2;
@@ -255,6 +255,8 @@ html {
 
             .leftBox{
                 padding-left: 5rem;
+                // background-color: red;
+                margin-top: .8rem;
 
                 .imgBox{
                      
@@ -486,7 +488,7 @@ html {
                 }
 
                 .cardName{
-                    transform: translateY(4rem);
+                    transform: translateY(3.5rem);
                     opacity: 1;
                     transition: $trans3;    
 
@@ -748,12 +750,12 @@ html {
 
 //footer
 .footerBox {
-    height: 25vh;
+    // height: 25vh;
     background-color: #181f29;
     position: relative;
     padding-top: 3.4rem;
     color: white;
-
+    padding-bottom: 2rem;
 
     .upLinkBox {
         @include flex_center();
@@ -782,7 +784,6 @@ html {
     .socialLinkBox {
         height: 8vh;
         width: 100%;
-        padding: 0 20rem;
         // background-color: red;
         @include flex_center();
 
@@ -794,10 +795,7 @@ html {
             i {
                 font-size: 3rem;
                 color: white;
-
             }
-
-
         }
     }
 
