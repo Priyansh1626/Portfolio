@@ -175,13 +175,15 @@ html {
             @include flex_center();
 
             .myWorkBtn {
-                height: 3.5rem;
-                padding: .6rem;
+                // height: 3.5rem;
+                // padding: .6rem;
+                padding: .6rem .6rem;
                 width: 13rem;   
                 font-size: 1.3rem;
                 background-color: transparent;
                 transition: $trans2;
                 border: .1rem solid cyan;
+                @include flex_center();
 
                 & a {
                     text-decoration: none;
@@ -205,7 +207,7 @@ html {
 
                 & i {
                     margin-left: .3rem;
-                    font-size: 1rem;
+                    // font-size: 1rem;
                     transition: $trans2;
                 }
 

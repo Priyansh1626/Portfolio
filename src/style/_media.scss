@@ -15,11 +15,15 @@
         .mid{
             p{
                 font-size: 2.9rem !important;
-                // background-color: red;
             }
 
             .myWorkBtn{
                 width: 12rem !important;
+                font-size: 1.25rem !important;
+
+                & i{
+                    font-size: 1.1rem !important;
+                }
             }
         }
     }
@@ -32,12 +36,11 @@
         .mid{
             p{
                 font-size: 2.7rem !important;
-                // background-color: red;
             }
 
             .myWorkBtn{
                 width: 11.5rem !important;
-                padding: 0 !important;
+                font-size: 1.25rem !important;
             }
         }
     }
@@ -53,12 +56,10 @@
         .mid{
             p{
                 font-size: 2.4rem !important;
-                // background-color: red;
             }
 
             .myWorkBtn{
-                width: 11.5rem !important;
-                padding: 0 !important;
+                width: 11rem !important;
             }
         }
     }
@@ -68,10 +69,76 @@
     .homeBody{
         height: 100vh !important;
     }
+    .homeMain_box{
+
+        .mid{
+            p{
+                font-size: 6.5vw !important;
+            }
+            
+            .project_btn{
+                margin-top: 2.7rem !important;
+            }
+
+            .myWorkBtn{
+                width: 11rem !important;
+                font-size: 1.2rem !important;
+
+                & i{
+                    font-size: 1rem !important;
+                }
+            }
+        }
+    }
 }
 
-@media (max-width:540) {
-    html{
-        overflow-x: hidden;
+@media (max-width:500px) {
+    .homeBody{
+        height: 100vh !important;
+    }
+
+    .homeMain_box{
+
+        .mid{
+
+            p{
+                font-size: 6vw !important;
+                line-height: 3.4rem !important;
+            }
+
+            .myWorkBtn{
+                width: 10rem !important;
+                font-size: 1.1rem !important;
+
+                & i{
+                    font-size: .9rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .homeBody{
+        height: 100vh !important;
+    }
+
+    .homeMain_box{
+
+        .mid{
+
+            p{
+                font-size: 6vw !important;
+            }
+
+            .project_btn{
+                margin-top: 2.3rem !important;
+            }
+
+            .myWorkBtn{
+                width: 9.5rem !important;
+                font-size: 1rem !important;
+            }
+        }
     }
 }
