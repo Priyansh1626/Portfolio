@@ -1,11 +1,59 @@
 @media (max-width: 1270px) {
-    // .hexa_About_box{
-    //     justify-content: space-around !important;
-    //     .hexBox{
-    //         width: 25vw !important;
-    //         margin: 0 .6rem;
-    //     }
-    // }
+    .leftBox{
+        padding-left: 0 !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .leftBox{
+        padding-left: 0 !important;
+
+        .imgBox{
+
+            img{
+                height: 50vh !important;
+            }
+        }
+
+        .middleBox{
+            font-size: 2.2rem !important;
+        }
+
+        .bottomBox{
+            // background-color: green;
+
+            p{
+                padding: 0 2rem !important;
+                width: 55rem !important;
+                font-size: 1.1rem !important;
+                // background-color: red;
+            }
+        }
+    }
+
+    .abtRight{
+
+        .rightBox{
+            padding: 1rem 2rem !important;
+            // padding-left: 2rem !important;
+            // padding-top: 1rem !important;
+        }
+
+        .abtHeading{
+
+            p{
+                font-size: 2.3rem !important;
+            }
+        }
+
+        .abtDataContainer{
+            font-size: 1.5rem !important;
+        }
+
+        .abtResumeBtnBox{
+            margin-top: 1.5rem !important;
+        }
+    }
 }
 
 @media (max-width:992px)
@@ -44,6 +92,15 @@
             }
         }
     }
+
+    .rightBox{
+
+        .abtDataContainer{
+            font-size: 1.4rem !important;
+            // background-color: red;
+            margin: .7rem 0 1rem 0 !important;
+        }
+    }
 }
 
 @media (max-width:670px) {
@@ -63,6 +120,15 @@
             }
         }
     }
+
+    .rightBox{
+
+        .abtDataContainer{
+            font-size: 1.36rem !important;
+            // background-color: red;
+        }
+    }
+
 }
 
 @media (max-width:576px) {
@@ -102,7 +168,7 @@
         .mid{
 
             p{
-                font-size: 6vw !important;
+                font-size: 6.5vw !important;
                 line-height: 3.4rem !important;
             }
 
@@ -128,7 +194,7 @@
         .mid{
 
             p{
-                font-size: 6vw !important;
+                font-size: 6.5vw !important;
             }
 
             .project_btn{

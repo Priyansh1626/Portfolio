@@ -22,7 +22,7 @@ export default function About() {
           <br />
           <Title title="ABOUT" />
           <div className="row m-0 p-0 my-5">
-            <div className="col-lg-6 p-0 col-md-12 abtLeft">
+            <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 col-md-12 abtLeft">
               <div className="leftBox">
                 <div className="row m-0 p-0">
                   <div className="col-lg-12 p-0">
@@ -49,8 +49,7 @@ export default function About() {
                         </span>
                         in Bhubneshwar, OD. I have serious passion for UI
                         effects, animations and creating intuitive, dynamic
-                        websites.
-                        <br />
+                        websites. {/* <br /> */}
                         <span>
                           <a href="#contact">Let's make something special.</a>
                         </span>
@@ -60,7 +59,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 p-0 abtRight">
+            <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 abtRight">
               <div className="rightBox">
                 <div className="abtHeading">
                   <p>
@@ -88,13 +87,10 @@ export default function About() {
                     );
                   })}
                 </div>
-                <p className="abtPara my-2">
-                  You can download my{" "}
-                  <span style={{ color: "#e31b6d" }}> resume </span> using the
-                  link &gt; {` `}
+                <p className="my-2 mx-0 abtResumeBtnBox">
                   <button>
                     <a href={resume} download="resume">
-                      Resume
+                      Download Resume
                     </a>
                   </button>
                 </p>

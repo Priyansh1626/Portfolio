@@ -17,7 +17,7 @@ export default function App() {
     <>
       <Home />
       <Navbar />
-      <BackToTopBtn />
+      {/* <BackToTopBtn /> */}
       <About />
       <Skill />
       <Projects />

@@ -1,4 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt:wght@500&family=Roboto+Slab:wght@500&display=swap");
+@media (max-width: 1270px) {
+  .leftBox {
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 1200px) {
+  .leftBox {
+    padding-left: 0 !important;
+  }
+  .leftBox .imgBox img {
+    height: 50vh !important;
+  }
+  .leftBox .middleBox {
+    font-size: 2.2rem !important;
+  }
+  .leftBox .bottomBox p {
+    padding: 0 2rem !important;
+    width: 55rem !important;
+    font-size: 1.1rem !important;
+  }
+  .abtRight .rightBox {
+    padding: 1rem 2rem !important;
+  }
+  .abtRight .abtHeading p {
+    font-size: 2.3rem !important;
+  }
+  .abtRight .abtDataContainer {
+    font-size: 1.5rem !important;
+  }
+  .abtRight .abtResumeBtnBox {
+    margin-top: 1.5rem !important;
+  }
+}
 @media (max-width: 992px) {
   .homeMain_box .mid p {
     font-size: 2.9rem !important;
@@ -19,6 +52,10 @@
     width: 11.5rem !important;
     font-size: 1.25rem !important;
   }
+  .rightBox .abtDataContainer {
+    font-size: 1.4rem !important;
+    margin: 0.7rem 0 1rem 0 !important;
+  }
 }
 @media (max-width: 670px) {
   .homeBody {
@@ -29,6 +66,9 @@
   }
   .homeMain_box .mid .myWorkBtn {
     width: 11rem !important;
+  }
+  .rightBox .abtDataContainer {
+    font-size: 1.36rem !important;
   }
 }
 @media (max-width: 576px) {
@@ -54,7 +94,7 @@
     height: 100vh !important;
   }
   .homeMain_box .mid p {
-    font-size: 6vw !important;
+    font-size: 6.5vw !important;
     line-height: 3.4rem !important;
   }
   .homeMain_box .mid .myWorkBtn {
@@ -70,7 +110,7 @@
     height: 100vh !important;
   }
   .homeMain_box .mid p {
-    font-size: 6vw !important;
+    font-size: 6.5vw !important;
   }
   .homeMain_box .mid .project_btn {
     margin-top: 2.3rem !important;
@@ -268,6 +308,7 @@ html {
 }
 .homeBody .homeMain_box .project_btn .myWorkBtn i {
   margin-left: 0.3rem;
+  font-size: 1.1rem;
   transition: all 0.2s linear;
 }
 .homeBody .homeMain_box .project_btn .myWorkBtn:active {
@@ -287,7 +328,7 @@ html {
 }
 .headerbox::after {
   content: "";
-  width: 6vw;
+  width: 5rem;
   height: 0.3rem;
   position: absolute;
   bottom: 0.2rem;
@@ -309,8 +350,9 @@ html {
   z-index: 100;
   cursor: pointer;
   border: none;
-  opacity: 0;
   transition: all 0.3s linear;
+  background-color: green;
+  z-index: 300;
 }
 
 .section2 {
@@ -341,7 +383,10 @@ html {
 }
 .section2 .abtclr .abtLeft .leftBox .bottomBox p {
   text-align: center;
-  width: 32vw;
+  width: 30rem;
+}
+.section2 .abtclr .abtLeft .leftBox .bottomBox p a {
+  text-decoration: none;
 }
 .section2 .abtclr .abtRight .rightBox {
   padding: 0 5rem 0 0;
@@ -354,7 +399,7 @@ html {
   font-size: 1.3rem;
   text-align: justify;
 }
-.section2 .abtclr .abtRight .rightBox .abtPara button {
+.section2 .abtclr .abtRight .rightBox button {
   padding: 0.3rem 1.5rem;
   border: 0.1rem solid #e31b6d;
   border-radius: 5rem;
@@ -362,26 +407,27 @@ html {
   margin-left: 0.4rem;
   box-shadow: 0.1rem 0.3rem 0.5rem rgb(230, 224, 224);
   transition: all 0.2s linear;
+  font-size: 1.3rem;
 }
-.section2 .abtclr .abtRight .rightBox .abtPara button a {
+.section2 .abtclr .abtRight .rightBox button a {
   text-decoration: none;
   color: #e31b6d;
 }
-.section2 .abtclr .abtRight .rightBox .abtPara button:hover {
+.section2 .abtclr .abtRight .rightBox button:hover {
   background-color: #e31b6d;
   transition: all 0.2s linear;
 }
-.section2 .abtclr .abtRight .rightBox .abtPara button:hover a {
+.section2 .abtclr .abtRight .rightBox button:hover a {
   color: white;
   transition: all 0.2s linear;
 }
-.section2 .abtclr .abtRight .rightBox .abtPara button:active {
+.section2 .abtclr .abtRight .rightBox button:active {
   transform: translateY(0.2rem);
 }
 .section2 .abtclr .abtRight .rightBox .abtDataContainer {
   display: flex;
   height: 5vh;
-  margin: 0.7rem 0 1rem 2rem;
+  margin: 0.7rem 0 1rem 1rem;
   font-size: 1.3rem;
 }
 .section2 .abtclr .abtRight .rightBox .abtDataContainer .icon {
@@ -393,10 +439,6 @@ html {
 }
 .section2 .abtclr .abtRight .rightBox .abtDataContainer .desc {
   margin: 0 0 0 0.3rem;
-  font-size: 1.35rem;
-}
-.section2 .abtclr .abtRight .rightBox .rightBtmPara {
-  font-size: 1.3rem;
 }
 
 .skillsBox {
@@ -647,7 +689,7 @@ html {
 }
 .section5 .headerbox::after {
   content: "";
-  width: 6vw;
+  width: 5rem;
   height: 0.3rem;
   position: absolute;
   bottom: 0.2rem;
