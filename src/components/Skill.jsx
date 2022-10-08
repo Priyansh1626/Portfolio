@@ -14,7 +14,7 @@ const allCatValues = [
 
 export default function Skill() {
   const [item, setItem] = useState(skillData);
-  const [catItems, setCatItems] = useState(allCatValues);
+  const [catItems] = useState(allCatValues);
 
   const filterItem = (categItem) => {
     if (categItem === "All") {

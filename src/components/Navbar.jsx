@@ -35,7 +35,7 @@ export default function Navbar() {
           <i className="fas fa-bars"></i>
         </label>
         <ul className="navbar_links">
-          <li className="nav_link active home">
+          <li className="nav_link home">
             <a href="#home" id="actHome">
               Home
             </a>

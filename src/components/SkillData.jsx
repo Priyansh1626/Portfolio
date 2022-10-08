@@ -3,7 +3,6 @@ import nodeJs from "../images/nodeJs.png";
 import expressJs from "../images/expressJs.png";
 import mongoDB from "../images/mongoDB.png";
 import sassImg from "../images/sassImg.png";
-import tailwindImg from "../images/tailwindImg.png";
 import materialUiImg from "../images/materialUiImg.png";
 import javascriptImg from "../images/javascript.jpg";
 import bootstrap from "../images/bootstrap.jpg";
@@ -47,26 +46,19 @@ const skillData = [
   {
     id: 6,
     domain: "webDev",
-    category: "FrontEnd",
-    language: "Tailwind",
-    img: tailwindImg,
-  },
-  {
-    id: 7,
-    domain: "webDev",
     category: "BackEnd",
     language: "Node Js",
     img: nodeJs,
   },
   {
-    id: 8,
+    id: 7,
     domain: "webDev",
     category: "BackEnd",
     language: "Express Js",
     img: expressJs,
   },
   {
-    id: 9,
+    id: 8,
     domain: "webDev",
     category: "BackEnd",
     language: "Mongo DB",

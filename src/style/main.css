@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt:wght@500&family=Roboto+Slab:wght@500&display=swap");
+@media (max-width: 1760px) {
+  html {
+    font-size: 110%;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 105%;
+  }
+}
 @media (max-width: 1270px) {
+  html {
+    font-size: 100%;
+  }
   .leftBox {
     padding-left: 0 !important;
   }
@@ -9,7 +22,7 @@
     padding-left: 0 !important;
   }
   .leftBox .imgBox img {
-    height: 50vh !important;
+    height: 20rem !important;
   }
   .leftBox .middleBox {
     font-size: 2.2rem !important;
@@ -43,6 +56,9 @@
   .homeMain_box .mid .myWorkBtn i {
     font-size: 1.1rem !important;
   }
+  .filterContainer .filterBtn {
+    width: 9.4rem !important;
+  }
 }
 @media (max-width: 768px) {
   .homeMain_box .mid p {
@@ -56,6 +72,10 @@
     font-size: 1.4rem !important;
     margin: 0.7rem 0 1rem 0 !important;
   }
+  .filterContainer .filterBtn {
+    width: 9rem !important;
+    font-size: 1.35rem !important;
+  }
 }
 @media (max-width: 670px) {
   .homeBody {
@@ -68,7 +88,11 @@
     width: 11rem !important;
   }
   .rightBox .abtDataContainer {
-    font-size: 1.36rem !important;
+    font-size: 1.32rem !important;
+  }
+  .filterContainer .filterBtn {
+    width: 8rem !important;
+    font-size: 1.3rem !important;
   }
 }
 @media (max-width: 576px) {
@@ -88,6 +112,10 @@
   .homeMain_box .mid .myWorkBtn i {
     font-size: 1rem !important;
   }
+  .filterContainer .filterBtn {
+    width: 7.8rem !important;
+    font-size: 1.35rem !important;
+  }
 }
 @media (max-width: 500px) {
   .homeBody {
@@ -104,6 +132,19 @@
   .homeMain_box .mid .myWorkBtn i {
     font-size: 0.9rem !important;
   }
+  .leftBox {
+    margin-top: 0 !important;
+  }
+  .leftBox .imgBox img {
+    height: 18rem !important;
+  }
+  .leftBox .bottomBox p {
+    text-align: justify !important;
+  }
+  .filterContainer .filterBtn {
+    width: 7.4rem !important;
+    font-size: 1.3rem !important;
+  }
 }
 @media (max-width: 430px) {
   .homeBody {
@@ -118,6 +159,10 @@
   .homeMain_box .mid .myWorkBtn {
     width: 9.5rem !important;
     font-size: 1rem !important;
+  }
+  .filterContainer .filterBtn {
+    width: 28vw !important;
+    font-size: 1.27rem !important;
   }
 }
 * {
@@ -369,7 +414,7 @@ html {
   margin-top: 0.8rem;
 }
 .section2 .abtclr .abtLeft .leftBox .imgBox img {
-  height: 45vh;
+  height: 20rem;
 }
 .section2 .abtclr .abtLeft .leftBox .middleBox {
   margin-top: 1rem;
@@ -442,35 +487,41 @@ html {
 }
 
 .skillsBox {
-  box-shadow: 0.5rem 0.3rem 0.4rem black;
+  width: 100%;
   background-color: white;
   position: relative;
 }
 .skillsBox .bgSkill {
-  background-color: #252934;
+  background-color: #4b5575;
 }
 .skillsBox .bgSkill2 {
   background-color: rgba(255, 255, 255, 0.93);
-  padding-bottom: 6.2rem;
+  padding-bottom: 4rem;
 }
 .skillsBox .filterContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3.5rem 0 0 0;
-  width: 100%;
+}
+.skillsBox .filterContainer .filterBox {
+  background-color: red;
 }
 .skillsBox .filterContainer .filterBox .filterBtn {
-  border: none;
-  width: 10vw;
+  width: 10rem;
   padding: 0.2rem 0;
-  margin: 0 3rem;
   border: 0.1rem solid #e31b6d;
   box-shadow: 0.1rem 0.7rem 1rem rgba(183, 178, 178, 0.467);
   font-size: 1.4rem;
   transition: all 0.2s linear;
   color: #e31b6d;
   border-radius: 0.15rem;
+}
+.skillsBox .filterContainer .filterBox .filterBtn:nth-child(1) {
+  border-right: none;
+}
+.skillsBox .filterContainer .filterBox .filterBtn:nth-child(2) {
+  border-right: none;
 }
 .skillsBox .filterContainer .filterBox .filterBtn:hover {
   transition: all 0.2s linear;
@@ -483,7 +534,6 @@ html {
 }
 .skillsBox .filterDataBox {
   margin-top: 0.5rem;
-  height: 50vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -495,19 +545,18 @@ html {
   display: none;
 }
 .skillsBox .filterDataBox .cardContainer {
-  height: 50vh;
-  width: 23vw;
   margin-top: 1rem;
-  padding: 0 1rem;
+  padding: 3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .skillsBox .filterDataBox .cardContainer .card {
-  height: 35vh;
-  width: 21vw;
+  height: 15rem;
+  width: 19rem;
   margin-top: -1rem;
+  background-color: white;
   border: none;
   border-radius: 25%;
   transition: all 0.2s linear;

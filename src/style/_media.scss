@@ -1,4 +1,20 @@
+@media (max-width:1760px) {
+    html{
+        font-size: 110%;
+    }
+}
+
+@media (max-width:1400px) {
+    html{
+        font-size: 105%;
+    }
+}
+
 @media (max-width: 1270px) {
+
+    html{
+        font-size: 100%;
+    }
     .leftBox{
         padding-left: 0 !important;
     }
@@ -11,7 +27,7 @@
         .imgBox{
 
             img{
-                height: 50vh !important;
+                height: 20rem !important;
             }
         }
 
@@ -75,6 +91,13 @@
             }
         }
     }
+
+    .filterContainer{
+
+        .filterBtn{
+            width: 9.4rem !important;
+        }
+    }
 }
 
 @media (max-width:768px)
@@ -101,6 +124,14 @@
             margin: .7rem 0 1rem 0 !important;
         }
     }
+
+    .filterContainer{
+
+        .filterBtn{
+            width: 9rem !important;
+            font-size: 1.35rem !important;
+        }
+    }
 }
 
 @media (max-width:670px) {
@@ -124,8 +155,16 @@
     .rightBox{
 
         .abtDataContainer{
-            font-size: 1.36rem !important;
+            font-size: 1.32rem !important;
             // background-color: red;
+        }
+    }
+
+    .filterContainer{
+
+        .filterBtn{
+            width: 8rem !important;
+            font-size: 1.3rem !important;
         }
     }
 
@@ -156,6 +195,14 @@
             }
         }
     }
+
+    .filterContainer{
+
+        .filterBtn{
+            width: 7.8rem !important;
+            font-size: 1.35rem !important;
+        }
+    }
 }
 
 @media (max-width:500px) {
@@ -182,6 +229,31 @@
             }
         }
     }
+
+    .leftBox{
+        margin-top: 0 !important;
+        .imgBox{
+            // background-color: red;
+
+            img{
+                height: 18rem !important;
+            }
+        }
+
+        .bottomBox{
+            p{
+                text-align: justify !important;
+            }
+        }
+    }
+
+    .filterContainer{
+
+        .filterBtn{
+            width: 7.4rem !important;
+            font-size: 1.3rem !important;
+        }
+    }
 }
 
 @media (max-width:430px) {
@@ -205,6 +277,14 @@
                 width: 9.5rem !important;
                 font-size: 1rem !important;
             }
+        }
+    }
+
+    .filterContainer{
+
+        .filterBtn{
+            width: 28vw !important;
+            font-size: 1.27rem !important;
         }
     }
 }

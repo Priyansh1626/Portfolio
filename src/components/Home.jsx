@@ -4,7 +4,6 @@ import Particle from "./Particle";
 export default function Home() {
   return (
     <>
-      {/* <div className="home_bg_image" id="section1"></div> */}
       <Particle />
       <section className="homeBody" id="home">
         <div className="homeMain_box">
