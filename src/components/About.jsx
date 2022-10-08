@@ -5,13 +5,6 @@ import resume from "./Data/Resume_5thSem.pdf";
 import AboutDetailsCard from "./AboutDetailsCard";
 import aboutData from "./AboutData";
 
-let aboutMe = ` I am passionate about building websites that can solve
-real-world challenges faced by individual or organisations.
-Beside my college studies I am trying to build different
-projects to grab my hand in Web Development. Being a begginer
-I am sure that I can build fast,working,dynamic and responsive
-websites. Currently my focus is on BackEnd Development.`;
-
 export default function About() {
   return (
     <>
@@ -49,7 +42,7 @@ export default function About() {
                         </span>
                         in Bhubneshwar, OD. I have serious passion for UI
                         effects, animations and creating intuitive, dynamic
-                        websites. {/* <br /> */}
+                        websites.
                         <span>
                           <a href="#contact">Let's make something special.</a>
                         </span>
@@ -88,11 +81,9 @@ export default function About() {
                   })}
                 </div>
                 <p className="my-2 mx-0 abtResumeBtnBox">
-                  <button>
-                    <a href={resume} download="resume">
-                      Download Resume
-                    </a>
-                  </button>
+                  <a href={resume} download="resume">
+                    Download Resume
+                  </a>
                 </p>
               </div>
             </div>

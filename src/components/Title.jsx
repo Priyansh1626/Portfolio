@@ -1,9 +1,10 @@
 import React from "react";
 
 export default function Title(prop) {
+  const { title } = prop;
   return (
     <>
-      <div className={`headerbox ${prop.headClr}`}>{prop.title}</div>
+      <div className="headerbox">{title}</div>
     </>
   );
 }

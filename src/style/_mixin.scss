@@ -4,10 +4,10 @@
     align-items: $align;
 }
 
-@mixin titleCss($titleClr:rgba(0, 0, 0, 0.836) , $afterClr: rgba(0, 0, 0, 0.466)){
+@mixin titleCss($titleClr:rgba(0, 0, 0, 0.836) , $afterClr: rgba(0, 0, 0, 0.599)){
     height: 6rem;
     font-size: 3rem;
-    color:$titleClr ;
+    color: $titleClr ;
     position: relative;
     // background-color: red;
     font-family: 'Prompt', sans-serif;
@@ -21,5 +21,6 @@
         bottom: .2rem;
         background-color: $afterClr;
         display: block;
+        border-radius: 1rem;
     }
 }

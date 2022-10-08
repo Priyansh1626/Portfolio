@@ -70,6 +70,10 @@
             margin-top: 1.5rem !important;
         }
     }
+
+    .project_main_box{
+        padding: 0 2rem !important;
+    }
 }
 
 @media (max-width:992px)
@@ -98,6 +102,18 @@
             width: 9.4rem !important;
         }
     }
+
+    .section3{
+
+        .clr2{
+            clip-path: polygon(100% 0, 100% 94%, 50% 100%, 0 94%, 0 0) !important;
+            padding-bottom: 10rem !important;
+        }
+    }
+
+    .project_main_box{
+        padding: 0 3rem !important;
+    }
 }
 
 @media (max-width:768px)
@@ -116,12 +132,17 @@
         }
     }
 
-    .rightBox{
+    .abtRight{
 
-        .abtDataContainer{
-            font-size: 1.4rem !important;
+        .rightBox{
             // background-color: red;
-            margin: .7rem 0 1rem 0 !important;
+            padding: 1rem 1.5rem !important;
+
+            .abtDataContainer{
+                font-size: 1.4rem !important;
+                // background-color: red;
+              margin: .7rem 0 1rem 0 !important;
+           }
         }
     }
 
@@ -131,6 +152,18 @@
             width: 9rem !important;
             font-size: 1.35rem !important;
         }
+    }
+
+    .section3{
+
+        .clr2{
+            clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0) !important;
+            padding-bottom: 9rem !important;
+        }
+    }
+
+    .project_main_box{
+        padding: 0 1rem !important;
     }
 }
 
@@ -168,6 +201,14 @@
         }
     }
 
+    .section3{
+
+        .clr2{
+            clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0) !important;
+            padding-bottom: 8rem !important;
+        }
+    }
+
 }
 
 @media (max-width:576px) {
@@ -179,6 +220,7 @@
         .mid{
             p{
                 font-size: 6.5vw !important;
+                line-height: 3.5rem !important;
             }
             
             .project_btn{
@@ -203,6 +245,10 @@
             font-size: 1.35rem !important;
         }
     }
+
+    .project_main_box{
+        padding: 0 4rem !important;
+    }
 }
 
 @media (max-width:500px) {
@@ -216,7 +262,7 @@
 
             p{
                 font-size: 6.5vw !important;
-                line-height: 3.4rem !important;
+                line-height: 10.5vw !important;
             }
 
             .myWorkBtn{
@@ -240,10 +286,22 @@
             }
         }
 
+        .middleBox{
+            font-size: 2.1rem !important;
+        }
+
         .bottomBox{
             p{
+                padding: 0 1.2rem !important;
                 text-align: justify !important;
             }
+        }
+    }
+    .abtRight{
+
+        .rightBox{
+            // background-color: red;
+            padding: 1rem 1rem !important;
         }
     }
 
@@ -253,6 +311,18 @@
             width: 7.4rem !important;
             font-size: 1.3rem !important;
         }
+    }
+
+    .section3{
+
+        .clr2{
+            clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0) !important;
+            padding-bottom: 8rem !important;
+        }
+    }
+
+    .project_main_box{
+        padding: 0 2rem !important;
     }
 }
 
@@ -277,6 +347,26 @@
                 width: 9.5rem !important;
                 font-size: 1rem !important;
             }
+        }
+    }
+
+    .leftBox{
+
+        .middleBox{
+            font-size: 2.05rem !important;
+        }
+    }
+    .rightBox{
+
+        .abtHeading{
+
+            p{
+                font-size: 2.1rem !important;
+            }
+        }
+
+        .abtPara{
+            font-size: 1.25rem !important;
         }
     }
 

@@ -14,11 +14,11 @@ export default function Home() {
               I'm a <span className="typeHome">full-stack</span> web developer.
             </p>
             <div className="project_btn">
-              <button className="myWorkBtn">
-                <a href="#about">
-                  View my work <i className="fa-solid fa-arrow-right-long"></i>
-                </a>
-              </button>
+              {/* <button className="myWorkBtn"> */}
+              <a href="#about" className="myWorkBtn">
+                View my work <i className="fa-solid fa-arrow-right-long"></i>
+              </a>
+              {/* </button> */}
             </div>
           </div>
         </div>

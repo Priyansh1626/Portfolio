@@ -7,7 +7,6 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
-// import More from "./components/More";
 import Footer from "./components/Footer";
 // import BackToTopBtn from "./components/BackToTopBtn";
 import Skill from "./components/Skill";
