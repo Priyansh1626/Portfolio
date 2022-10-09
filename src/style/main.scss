@@ -95,7 +95,7 @@ html {
         .active{
             // background-color: white;
             & a{
-                color: #e31b6d;
+                color: $RedClr;
                 transition: $trans2;
             }
         }
@@ -107,7 +107,7 @@ html {
 }
 
 //homepage
-.homeBody {
+.homeSection {
     min-height: 100vh;
     @include flex_center();
     color: white;
@@ -115,7 +115,7 @@ html {
 
     .typeHome{
         position: relative;
-        border-bottom: .2rem solid #e31b6d;
+        border-bottom: .2rem solid $RedClr;
         padding-bottom: -2rem;
         // text-decoration: underline;
     }
@@ -129,7 +129,7 @@ html {
         height: 20%;
         width: 100%;
         background: black;
-        // border-left: .2rem solid #e31b6d;
+        // border-left: .2rem solid $RedClr;
         animation: underline 3s ease-in-out infinite alternate;
     }
 
@@ -157,7 +157,7 @@ html {
 
         span {
             // color: rgb(115, 10, 236);
-            color: #e31b6d;
+            color: $RedClr;
             font-family: "Roboto Slab";
             overflow: hidden;
         }
@@ -187,6 +187,12 @@ html {
                 text-decoration: none;
                 color: white;
 
+                & i {
+                    margin-left: .4rem;
+                    font-size: 1.1rem;
+                    transition: $trans2;
+                }
+
                 &:hover {
                     transition: $trans2;
                     background-color: cyan;
@@ -197,12 +203,6 @@ html {
                         transform: rotate(90deg);
                         color: black;
                     }
-                }
-
-                & i {
-                    margin-left: .3rem;
-                    font-size: 1.1rem;
-                    transition: $trans2;
                 }
 
                 &:active {
@@ -239,7 +239,7 @@ html {
 }
 
 //about
-.section2 {
+.aboutSection {
     height: 100%;
     background-color: white;
 
@@ -311,24 +311,18 @@ html {
                 
                 & a{
                     padding: .5rem 1.5rem;
-                    border: .1rem solid #e31b6d;
+                    border: .1rem solid $RedClr;
                     border-radius: 5rem;
-                    background-color: white;
-                    box-shadow: .1rem .3rem .5rem rgb(230, 224, 224);
+                    background-color: $RedClr;
+                    box-shadow: .1rem .5rem .9rem #e31b6e84;
                     transition: $trans2;
                     font-size: 1.3rem;
                     text-decoration: none;
-                    color: #e31b6d;
+                    color: white;
 
                     &:hover{
-                        background-color: #e31b6d;
                         transition: $trans2;
-                        color: white;
-                        transition: $trans2;
-                    }
-
-                    &:active{
-                        transform: translateY(.2rem);
+                        box-shadow: .1rem .4rem .5rem #e31b6e84;
                     }
                 }
 
@@ -341,7 +335,7 @@ html {
                     // @include flex_center();
 
                     .icon{
-                        color: #e31b6d;
+                        color: $RedClr;
                         // background-color: red;
                     }
 
@@ -393,11 +387,11 @@ html {
                 // height: 3vh;
                 padding: .2rem 0;
                 // margin: 0 3rem;
-                border: .1rem solid #e31b6d;
+                border: .1rem solid $RedClr;
                 box-shadow: .1rem .7rem 1rem rgba(183, 178, 178, 0.467);
                 font-size: 1.4rem;
                 transition: $trans2;
-                color: #e31b6d;
+                color: $RedClr;
                 border-radius: .15rem;
                 // border-right: none;
 
@@ -410,9 +404,9 @@ html {
 
                 &:hover{
                     transition: $trans2;
-                    background-color: #e31b6d;
+                    background-color: $RedClr;
                     color: white;
-                    border: .1rem solid #e31b6d;
+                    border: .1rem solid $RedClr;
                 }
 
                 &:active{
@@ -510,7 +504,7 @@ html {
 }
 
 //project
-.section3 {
+.projectSection {
     // height: 100%;
 
     .clr {
@@ -644,10 +638,10 @@ html {
 }
 
 //contact
-.section5 {
-    height: 100vh;
+.contactSection {
+    min-height: 100vh;
     background-color: #252934;
-    // color: white;
+    padding-bottom: 1.9rem;
 
     .headerbox {
         margin-top: 1rem;
@@ -655,26 +649,30 @@ html {
     }
 
     .ask {
-        height: 4rem;
-        margin-top: 1.5rem;
+        // height: 4rem;
+        margin-top: 2.8rem;
         @include flex_center();
+        // background-color: pink;
 
         & p {
             margin: 0;
             color: cyan;
+            // background-color: red;
         }
     }
 
     .formbox {
-        height: 50%;
-        width: 100%;
+        margin-top: 2rem;
+        // height: 50%;
+        // width: 100%;
+        // background-color: red;
         @include flex_center();
 
         .formContainer {
-            margin-top: 3rem;
-            height: 100%;
-            width: 35%;
+            // height: 100%;
+            // width: 35%;
             // background-color: yellow;
+            width: 30rem;
 
             & input,
             textarea {
@@ -693,7 +691,7 @@ html {
             }
 
             & input {
-                height: 6vh;
+                height: 2.5rem;
                 margin-top: .2rem;
             }
 
@@ -706,16 +704,17 @@ html {
 
         .btnBox {
             margin-top: .3rem;
-            height: 5.5Vh;
+            // height: 5.5Vh;
             // background-color: green;
-            text-align: right;
+            // text-align: right;
             @include flex_center(flex-end);
 
             & button {
-                height: 100%;
+                // height: 100%;
                 background-color: transparent;
                 border: .1rem solid white;
-                width: 25%;
+                // width: 25%;
+                padding: .2rem 1.8rem;
                 font-size: 1.2rem;
                 transition: $trans2;
                 color: white;
@@ -750,7 +749,7 @@ html {
             height: 100%;
             width: 3.5rem;
             border: none;
-            background-color: #e31b6d;
+            background-color: $RedClr;
             @include flex_center();
             transform: rotate(90deg);
             // padding-top: .25rem;

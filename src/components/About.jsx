@@ -8,7 +8,7 @@ import aboutData from "./AboutData";
 export default function About() {
   return (
     <>
-      <section className="section2" id="about">
+      <section className="aboutSection" id="about">
         <div className="abtclr">
           <br />
           <br />

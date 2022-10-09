@@ -6,7 +6,7 @@ import projectCardData from "./ProjectCardData";
 export default function Projects() {
   return (
     <>
-      <section className="section3" id="projects">
+      <section className="projectSection" id="projects">
         <div className="clr">
           <div className="clr2">
             <div className="allinProject">

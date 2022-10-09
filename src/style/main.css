@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt:wght@500&family=Roboto+Slab:wght@500&display=swap");
 @media (max-width: 1760px) {
   html {
-    font-size: 110%;
+    font-size: 105%;
   }
 }
 @media (max-width: 1400px) {
   html {
-    font-size: 105%;
+    font-size: 103%;
   }
 }
 @media (max-width: 1270px) {
@@ -62,13 +62,16 @@
   .filterContainer .filterBtn {
     width: 9.4rem !important;
   }
-  .section3 .clr2 {
+  .projectSection .clr2 {
     -webkit-clip-path: polygon(100% 0, 100% 94%, 50% 100%, 0 94%, 0 0) !important;
             clip-path: polygon(100% 0, 100% 94%, 50% 100%, 0 94%, 0 0) !important;
     padding-bottom: 10rem !important;
   }
   .project_main_box {
     padding: 0 3rem !important;
+  }
+  .contactSection .headerbox {
+    margin: 0rem !important;
   }
 }
 @media (max-width: 768px) {
@@ -90,7 +93,7 @@
     width: 9rem !important;
     font-size: 1.35rem !important;
   }
-  .section3 .clr2 {
+  .projectSection .clr2 {
     -webkit-clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0) !important;
             clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0) !important;
     padding-bottom: 9rem !important;
@@ -98,9 +101,12 @@
   .project_main_box {
     padding: 0 1rem !important;
   }
+  .contactSection .formContainer {
+    width: 27rem !important;
+  }
 }
 @media (max-width: 670px) {
-  .homeBody {
+  .homeSection {
     height: 100vh !important;
   }
   .homeMain_box .mid p {
@@ -116,14 +122,14 @@
     width: 8rem !important;
     font-size: 1.3rem !important;
   }
-  .section3 .clr2 {
+  .projectSection .clr2 {
     -webkit-clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0) !important;
             clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0) !important;
     padding-bottom: 8rem !important;
   }
 }
 @media (max-width: 576px) {
-  .homeBody {
+  .homeSection {
     height: 100vh !important;
   }
   .homeMain_box .mid p {
@@ -147,9 +153,12 @@
   .project_main_box {
     padding: 0 4rem !important;
   }
+  .contactSection .formContainer {
+    width: 26rem !important;
+  }
 }
 @media (max-width: 500px) {
-  .homeBody {
+  .homeSection {
     height: 100vh !important;
   }
   .homeMain_box .mid p {
@@ -183,7 +192,7 @@
     width: 7.4rem !important;
     font-size: 1.3rem !important;
   }
-  .section3 .clr2 {
+  .projectSection .clr2 {
     -webkit-clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0) !important;
             clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0) !important;
     padding-bottom: 8rem !important;
@@ -191,9 +200,12 @@
   .project_main_box {
     padding: 0 2rem !important;
   }
+  .contactSection .formContainer {
+    width: 85vw !important;
+  }
 }
 @media (max-width: 430px) {
-  .homeBody {
+  .homeSection {
     height: 100vh !important;
   }
   .homeMain_box .mid p {
@@ -218,6 +230,9 @@
   .filterContainer .filterBtn {
     width: 28vw !important;
     font-size: 1.27rem !important;
+  }
+  .contactSection .ask {
+    font-size: 0.95rem !important;
   }
 }
 * {
@@ -309,7 +324,7 @@ html {
   display: none;
 }
 
-.homeBody {
+.homeSection {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -317,12 +332,12 @@ html {
   color: white;
   overflow: hidden;
 }
-.homeBody .typeHome {
+.homeSection .typeHome {
   position: relative;
   border-bottom: 0.2rem solid #e31b6d;
   padding-bottom: -2rem;
 }
-.homeBody .typeHome::before {
+.homeSection .typeHome::before {
   content: "";
   position: absolute;
   left: -0.5%;
@@ -355,7 +370,7 @@ html {
     left: 100%;
   }
 }
-.homeBody .homeMain_box {
+.homeSection .homeMain_box {
   height: 50vh;
   width: 100vw;
   text-align: center;
@@ -364,22 +379,22 @@ html {
   justify-content: center;
   align-items: center;
 }
-.homeBody .homeMain_box span {
+.homeSection .homeMain_box span {
   color: #e31b6d;
   font-family: "Roboto Slab";
   overflow: hidden;
 }
-.homeBody .homeMain_box p {
+.homeSection .homeMain_box p {
   font-size: 3rem;
   line-height: 4rem;
 }
-.homeBody .homeMain_box .project_btn {
+.homeSection .homeMain_box .project_btn {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.homeBody .homeMain_box .project_btn .myWorkBtn {
+.homeSection .homeMain_box .project_btn .myWorkBtn {
   padding: 0.6rem 0.6rem;
   width: 13rem;
   font-size: 1.3rem;
@@ -392,22 +407,22 @@ html {
   text-decoration: none;
   color: white;
 }
-.homeBody .homeMain_box .project_btn .myWorkBtn:hover {
+.homeSection .homeMain_box .project_btn .myWorkBtn i {
+  margin-left: 0.4rem;
+  font-size: 1.1rem;
+  transition: all 0.2s linear;
+}
+.homeSection .homeMain_box .project_btn .myWorkBtn:hover {
   transition: all 0.2s linear;
   background-color: cyan;
   color: black;
 }
-.homeBody .homeMain_box .project_btn .myWorkBtn:hover i {
+.homeSection .homeMain_box .project_btn .myWorkBtn:hover i {
   transition: all 0.2s linear;
   transform: rotate(90deg);
   color: black;
 }
-.homeBody .homeMain_box .project_btn .myWorkBtn i {
-  margin-left: 0.3rem;
-  font-size: 1.1rem;
-  transition: all 0.2s linear;
-}
-.homeBody .homeMain_box .project_btn .myWorkBtn:active {
+.homeSection .homeMain_box .project_btn .myWorkBtn:active {
   transition: all 0.1s linear;
   transform: translateY(0.2rem);
 }
@@ -424,10 +439,10 @@ html {
 }
 .headerbox::after {
   content: "";
-  width: 5rem;
+  width: 5.5rem;
   height: 0.3rem;
   position: absolute;
-  bottom: 0.2rem;
+  bottom: 0.7rem;
   background-color: rgba(0, 0, 0, 0.599);
   display: block;
   border-radius: 1rem;
@@ -452,84 +467,79 @@ html {
   z-index: 300;
 }
 
-.section2 {
+.aboutSection {
   height: 100%;
   background-color: white;
 }
-.section2 .abtclr {
+.aboutSection .abtclr {
   padding-bottom: 2rem;
   background-color: white;
   box-shadow: 0.5rem 0.3rem 0.4rem black;
 }
-.section2 .abtclr .abtLeft .leftBox {
+.aboutSection .abtclr .abtLeft .leftBox {
   padding-left: 5rem;
   margin-top: 0.8rem;
 }
-.section2 .abtclr .abtLeft .leftBox .imgBox img {
+.aboutSection .abtclr .abtLeft .leftBox .imgBox img {
   height: 20rem;
 }
-.section2 .abtclr .abtLeft .leftBox .middleBox {
+.aboutSection .abtclr .abtLeft .leftBox .middleBox {
   margin-top: 1rem;
   font-size: 2rem;
 }
-.section2 .abtclr .abtLeft .leftBox .bottomBox {
+.aboutSection .abtclr .abtLeft .leftBox .bottomBox {
   margin-top: 0.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section2 .abtclr .abtLeft .leftBox .bottomBox p {
+.aboutSection .abtclr .abtLeft .leftBox .bottomBox p {
   text-align: center;
   width: 30rem;
 }
-.section2 .abtclr .abtLeft .leftBox .bottomBox p a {
+.aboutSection .abtclr .abtLeft .leftBox .bottomBox p a {
   text-decoration: none;
 }
-.section2 .abtclr .abtRight .rightBox {
+.aboutSection .abtclr .abtRight .rightBox {
   padding: 0 5rem 0 0;
 }
-.section2 .abtclr .abtRight .rightBox .abtHeading p {
+.aboutSection .abtclr .abtRight .rightBox .abtHeading p {
   font-size: 2rem;
   font-weight: 600;
 }
-.section2 .abtclr .abtRight .rightBox .abtPara {
+.aboutSection .abtclr .abtRight .rightBox .abtPara {
   font-size: 1.3rem;
   text-align: justify;
 }
-.section2 .abtclr .abtRight .rightBox a {
+.aboutSection .abtclr .abtRight .rightBox a {
   padding: 0.5rem 1.5rem;
   border: 0.1rem solid #e31b6d;
   border-radius: 5rem;
-  background-color: white;
-  box-shadow: 0.1rem 0.3rem 0.5rem rgb(230, 224, 224);
+  background-color: #e31b6d;
+  box-shadow: 0.1rem 0.5rem 0.9rem rgba(227, 27, 110, 0.5176470588);
   transition: all 0.2s linear;
   font-size: 1.3rem;
   text-decoration: none;
-  color: #e31b6d;
-}
-.section2 .abtclr .abtRight .rightBox a:hover {
-  background-color: #e31b6d;
-  transition: all 0.2s linear;
   color: white;
+}
+.aboutSection .abtclr .abtRight .rightBox a:hover {
   transition: all 0.2s linear;
+  box-shadow: 0.1rem 0.4rem 0.5rem rgba(227, 27, 110, 0.5176470588);
 }
-.section2 .abtclr .abtRight .rightBox a:active {
-  transform: translateY(0.2rem);
-}
-.section2 .abtclr .abtRight .rightBox .abtDataContainer {
+.aboutSection .abtclr .abtRight .rightBox .abtDataContainer {
   display: flex;
   height: 5vh;
   margin: 0.7rem 0 1rem 1rem;
   font-size: 1.3rem;
 }
-.section2 .abtclr .abtRight .rightBox .abtDataContainer .icon {
+.aboutSection .abtclr .abtRight .rightBox .abtDataContainer .icon {
   color: #e31b6d;
 }
-.section2 .abtclr .abtRight .rightBox .abtDataContainer .heading {
+.aboutSection .abtclr .abtRight .rightBox .abtDataContainer .heading {
   font-weight: bold;
   margin-left: 0.4rem;
 }
-.section2 .abtclr .abtRight .rightBox .abtDataContainer .desc {
+.aboutSection .abtclr .abtRight .rightBox .abtDataContainer .desc {
   margin: 0 0 0 0.3rem;
 }
 
@@ -650,40 +660,40 @@ html {
   left: 0;
 }
 
-.section3 .clr {
+.projectSection .clr {
   background-color: #252934;
 }
-.section3 .clr2 {
+.projectSection .clr2 {
   background-color: white;
   -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
           clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
   padding-bottom: 13rem;
   height: 100%;
 }
-.section3 .allinProject .project_main_box {
+.projectSection .allinProject .project_main_box {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 5rem;
 }
-.section3 .allinProject .project_main_box .row {
+.projectSection .allinProject .project_main_box .row {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section3 .allinProject .project_main_box .row .projectCard {
+.projectSection .allinProject .project_main_box .row .projectCard {
   height: 18rem;
   transition: all 0.2s linear;
   position: relative;
 }
-.section3 .allinProject .project_main_box .row .projectCard img {
+.projectSection .allinProject .project_main_box .row .projectCard img {
   height: 100%;
   width: 100%;
   transition: all 0.2s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverDivBox {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -692,23 +702,23 @@ html {
   opacity: 0;
   transition: all 0.2s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .top,
-.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverDivBox .top,
+.projectSection .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
   color: black;
   text-align: center;
   align-items: center;
   font-size: large;
   margin: 0.5rem 0;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .top {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverDivBox .top {
   font-size: 2rem;
   font-weight: 600;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
   color: rgba(255, 0, 0, 0.597);
   line-height: 1rem;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverButtonBox {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverButtonBox {
   height: 3rem;
   width: 100%;
   display: flex;
@@ -719,7 +729,7 @@ html {
   opacity: 0;
   transition: all 0.2s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverButtonBox a {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverButtonBox a {
   padding: 0.3rem 2rem;
   display: flex;
   justify-content: center;
@@ -730,36 +740,37 @@ html {
   font-size: x-large;
   transition: all 0.2s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard .hoverButtonBox a:hover {
+.projectSection .allinProject .project_main_box .row .projectCard .hoverButtonBox a:hover {
   background: rgba(255, 0, 0, 0.696);
   transition: all 0.2s linear;
   color: white;
   transition: all 0.1s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard:hover {
+.projectSection .allinProject .project_main_box .row .projectCard:hover {
   transition: all 0.2s linear;
   box-shadow: 0.3rem 0.2rem 1rem rgba(201, 198, 198, 0.874);
 }
-.section3 .allinProject .project_main_box .row .projectCard:hover img {
+.projectSection .allinProject .project_main_box .row .projectCard:hover img {
   opacity: 0.1;
   transition: all 0.2s linear;
 }
-.section3 .allinProject .project_main_box .row .projectCard:hover .hoverDivBox {
+.projectSection .allinProject .project_main_box .row .projectCard:hover .hoverDivBox {
   opacity: 1;
   transition: all 0.2s linear;
   top: 20%;
 }
-.section3 .allinProject .project_main_box .row .projectCard:hover .hoverButtonBox {
+.projectSection .allinProject .project_main_box .row .projectCard:hover .hoverButtonBox {
   opacity: 1;
   bottom: 20%;
   transition: all 0.2s linear;
 }
 
-.section5 {
-  height: 100vh;
+.contactSection {
+  min-height: 100vh;
   background-color: #252934;
+  padding-bottom: 1.9rem;
 }
-.section5 .headerbox {
+.contactSection .headerbox {
   margin-top: 1rem;
   height: 6rem;
   font-size: 3rem;
@@ -770,41 +781,37 @@ html {
   justify-content: center;
   align-items: center;
 }
-.section5 .headerbox::after {
+.contactSection .headerbox::after {
   content: "";
-  width: 5rem;
+  width: 5.5rem;
   height: 0.3rem;
   position: absolute;
-  bottom: 0.2rem;
+  bottom: 0.7rem;
   background-color: white;
   display: block;
   border-radius: 1rem;
 }
-.section5 .ask {
-  height: 4rem;
-  margin-top: 1.5rem;
+.contactSection .ask {
+  margin-top: 2.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section5 .ask p {
+.contactSection .ask p {
   margin: 0;
   color: cyan;
 }
-.section5 .formbox {
-  height: 50%;
-  width: 100%;
+.contactSection .formbox {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.section5 .formbox .formContainer {
-  margin-top: 3rem;
-  height: 100%;
-  width: 35%;
+.contactSection .formbox .formContainer {
+  width: 30rem;
 }
-.section5 .formbox .formContainer input,
-.section5 .formbox .formContainer textarea {
+.contactSection .formbox .formContainer input,
+.contactSection .formbox .formContainer textarea {
   width: 100%;
   border-radius: 0;
   border: none;
@@ -813,38 +820,35 @@ html {
   font-size: 1rem;
   color: white;
 }
-.section5 .formbox .formContainer input:focus,
-.section5 .formbox .formContainer textarea:focus {
+.contactSection .formbox .formContainer input:focus,
+.contactSection .formbox .formContainer textarea:focus {
   border: none;
   outline: none;
 }
-.section5 .formbox .formContainer input {
-  height: 6vh;
+.contactSection .formbox .formContainer input {
+  height: 2.5rem;
   margin-top: 0.2rem;
 }
-.section5 .formbox .formContainer textarea {
+.contactSection .formbox .formContainer textarea {
   height: 25vh;
   margin-top: 0.2rem;
   padding-top: 0.5rem;
 }
-.section5 .formbox .btnBox {
+.contactSection .formbox .btnBox {
   margin-top: 0.3rem;
-  height: 5.5Vh;
-  text-align: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.section5 .formbox .btnBox button {
-  height: 100%;
+.contactSection .formbox .btnBox button {
   background-color: transparent;
   border: 0.1rem solid white;
-  width: 25%;
+  padding: 0.2rem 1.8rem;
   font-size: 1.2rem;
   transition: all 0.2s linear;
   color: white;
 }
-.section5 .formbox .btnBox button:hover {
+.contactSection .formbox .btnBox button:hover {
   background-color: cyan;
   border: 0.1rem solid cyan;
   transition: all 0.2s linear;

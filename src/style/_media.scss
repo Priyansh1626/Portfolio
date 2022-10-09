@@ -1,12 +1,12 @@
 @media (max-width:1760px) {
     html{
-        font-size: 110%;
+        font-size: 105%;
     }
 }
 
 @media (max-width:1400px) {
     html{
-        font-size: 105%;
+        font-size: 103%;
     }
 }
 
@@ -51,8 +51,6 @@
 
         .rightBox{
             padding: 1rem 2rem !important;
-            // padding-left: 2rem !important;
-            // padding-top: 1rem !important;
         }
 
         .abtHeading{
@@ -103,7 +101,7 @@
         }
     }
 
-    .section3{
+    .projectSection{
 
         .clr2{
             clip-path: polygon(100% 0, 100% 94%, 50% 100%, 0 94%, 0 0) !important;
@@ -113,6 +111,14 @@
 
     .project_main_box{
         padding: 0 3rem !important;
+    }
+
+    .contactSection{
+
+        .headerbox{
+            margin: 0rem !important;
+            // background-color: red;
+        }
     }
 }
 
@@ -154,7 +160,7 @@
         }
     }
 
-    .section3{
+    .projectSection{
 
         .clr2{
             clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0) !important;
@@ -165,11 +171,18 @@
     .project_main_box{
         padding: 0 1rem !important;
     }
-}
 
+    .contactSection{
+
+        .formContainer{
+            width: 27rem !important;
+        }
+    }
+}
+    
 @media (max-width:670px) {
 
-    .homeBody{
+    .homeSection{
         height: 100vh !important;
     }
     .homeMain_box{
@@ -201,7 +214,7 @@
         }
     }
 
-    .section3{
+    .projectSection{
 
         .clr2{
             clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0) !important;
@@ -212,7 +225,7 @@
 }
 
 @media (max-width:576px) {
-    .homeBody{
+    .homeSection{
         height: 100vh !important;
     }
     .homeMain_box{
@@ -249,10 +262,18 @@
     .project_main_box{
         padding: 0 4rem !important;
     }
+
+    .contactSection{
+
+        .formContainer{
+
+            width: 26rem !important;
+        }
+    }
 }
 
 @media (max-width:500px) {
-    .homeBody{
+    .homeSection{
         height: 100vh !important;
     }
 
@@ -313,7 +334,7 @@
         }
     }
 
-    .section3{
+    .projectSection{
 
         .clr2{
             clip-path: polygon(100% 0, 100% 97%, 50% 100%, 0 97%, 0 0) !important;
@@ -324,10 +345,18 @@
     .project_main_box{
         padding: 0 2rem !important;
     }
+
+    .contactSection{
+
+        .formContainer{
+
+            width: 85vw !important;
+        }
+    }
 }
 
 @media (max-width:430px) {
-    .homeBody{
+    .homeSection{
         height: 100vh !important;
     }
 
@@ -375,6 +404,13 @@
         .filterBtn{
             width: 28vw !important;
             font-size: 1.27rem !important;
+        }
+    }
+
+    .contactSection{
+
+        .ask{
+            font-size: .95rem !important;
         }
     }
 }

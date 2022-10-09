@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Particle />
-      <section className="homeBody" id="home">
+      <section className="homeSection" id="home">
         <div className="homeMain_box">
           <div className="mid">
             <p>
