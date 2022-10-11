@@ -18,6 +18,11 @@ html {
     // font-size: 62.5%;
 }
 
+section{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .flex{
     @include flex_center();
 }
@@ -353,7 +358,7 @@ html {
         margin: 3.5rem 0 0 0;
 
         & .filterBox{
-            background-color: red;
+            // background-color: red;
 
             .filterBtn{
                 width: 10rem;
@@ -380,10 +385,6 @@ html {
                     background-color: $RedClr;
                     color: white;
                     border: .1rem solid $RedClr;
-                }
-
-                &:active{
-                    transform: translateY(.1rem);
                 }
             }
         }
@@ -705,6 +706,8 @@ html {
 //footer
 .footerBox {
     // height: 25vh;
+    overflow-x: visible;
+    overflow-y: visible;
     background-color: #181f29;
     position: relative;
     padding-top: 3.4rem;

@@ -10,7 +10,7 @@ export default function Contact() {
         <br />
         <br />
         <Title title="CONTACT" />
-        <div className="ask">
+        <div className="ask" data-aos="fade-out" data-aos-duration="1000">
           <p>Have a question or want to work together?</p>
         </div>
         <Contactform />

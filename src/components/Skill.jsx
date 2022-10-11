@@ -36,7 +36,11 @@ export default function Skill() {
             <br />
             <br />
             <Title title="SKILLS" />
-            <div className="filterContainer">
+            <div
+              className="filterContainer"
+              data-aos="fade-out"
+              data-aos-duration="1500"
+            >
               <div className="filterBox">
                 {catItems.map((curr, index) => {
                   return (
@@ -51,7 +55,11 @@ export default function Skill() {
                 })}
               </div>
             </div>
-            <div className="filterDataBox">
+            <div
+              className="filterDataBox"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
               {item.map((currElm) => {
                 return (
                   <SkillCard

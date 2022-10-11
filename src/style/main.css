@@ -246,6 +246,11 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -534,9 +539,6 @@ html {
   align-items: center;
   margin: 3.5rem 0 0 0;
 }
-.skillsBox .filterContainer .filterBox {
-  background-color: red;
-}
 .skillsBox .filterContainer .filterBox .filterBtn {
   width: 10rem;
   padding: 0.2rem 0;
@@ -558,9 +560,6 @@ html {
   background-color: #e31b6d;
   color: white;
   border: 0.1rem solid #e31b6d;
-}
-.skillsBox .filterContainer .filterBox .filterBtn:active {
-  transform: translateY(0.1rem);
 }
 .skillsBox .filterDataBox {
   margin-top: 0.5rem;
@@ -828,6 +827,8 @@ html {
 }
 
 .footerBox {
+  overflow-x: visible;
+  overflow-y: visible;
   background-color: #181f29;
   position: relative;
   padding-top: 3.4rem;

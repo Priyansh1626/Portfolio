@@ -5,7 +5,11 @@ export default function Contactform() {
     <>
       <div className="formbox">
         <div className="formContainer">
-          <form action="https://formspree.io/f/maykqkva" method="POST">
+          <form
+            action="https://formspree.io/f/maykqkva"
+            method="POST"
+            data-aos="slide-left"
+          >
             <input
               type="text"
               name="name"
