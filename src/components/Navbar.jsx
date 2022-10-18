@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 window.onscroll = () => {
   let header = document.querySelector(".header_container");
@@ -27,13 +27,32 @@ window.onscroll = () => {
 };
 
 export default function Navbar() {
+  const [showMenuIcon, setShowMenuIcon] = useState(false);
   return (
     <>
-      <header className="container-fluid header_container">
-        <input type="checkbox" className="main_menu_btn" id="menu_btn" />
-        <label htmlFor="menu_btn" className="main-menu_icon">
-          <i className="fas fa-bars"></i>
-        </label>
+      <header
+        className={`container-fluid header_container ${
+          showMenuIcon && "mob_active"
+        }`}
+      >
+        <input type="checkbox" className="nav_checkbox" id="menu_btn" />
+        <label htmlFor="menu_btn" className="mav_menu_icon"></label>
+        <div className="nav-icons">
+          <button
+            onClick={() => {
+              setShowMenuIcon(!showMenuIcon);
+            }}
+          >
+            <i className="fa-solid fa-xmark close"></i>
+          </button>
+          <button
+            onClick={() => {
+              setShowMenuIcon(!showMenuIcon);
+            }}
+          >
+            <i className="fa-solid fa-bars open"></i>
+          </button>
+        </div>
         <ul className="navbar_links">
           <li className="nav_link home">
             <a href="#home" id="actHome">

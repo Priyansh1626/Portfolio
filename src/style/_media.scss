@@ -124,6 +124,56 @@
 
 @media (max-width:768px)
 {
+
+    .header_container{
+        position: relative;
+
+        .nav-icons{
+            display: block;
+    
+            .open{
+                display: inline-block !important;
+                position: relative;
+                z-index: 999;
+            }
+        }
+
+        .navbar_links{
+            opacity: 0;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            flex-direction: column;
+            background-color: #181f29;
+            gap: 2rem;
+            transition: all .3s linear;
+        }
+    }
+
+    .mob_active{
+
+        .navbar_links{
+            left: 0;
+            opacity: 1;
+            transition: $trans3;
+        }
+
+        .nav-icons{
+            
+            .close{
+                display: inline-block !important;
+                position: relative;
+                z-index: 999;
+            }
+
+            .open{
+                display: none !important;
+            }
+        }
+    }
+
     .homeMain_box{
 
         .mid{

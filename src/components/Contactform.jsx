@@ -9,6 +9,7 @@ export default function Contactform() {
             action="https://formspree.io/f/maykqkva"
             method="POST"
             data-aos="slide-left"
+            data-aos-duration="800"
           >
             <input
               type="text"
