@@ -138,12 +138,11 @@ html {
     }
 }
 
-//title(heading) of every section
-.headerbox {
+.headerbox{
     @include titleCss();
 }
 
-//home section
+//homepage
 .homeSection {
     min-height: 100vh;
     @include flex_center();
