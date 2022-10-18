@@ -59,7 +59,7 @@ export default function About() {
             <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 abtRight">
               <div
                 className="rightBox"
-                data-aos="slide-left"
+                data-aos="slide-right"
                 data-aos-duration="800"
               >
                 <div className="abtHeading">
