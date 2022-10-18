@@ -70,7 +70,6 @@ export default function Skill() {
                 );
               })}
             </div>
-            <div className="lineHide"></div>
           </div>
         </div>
       </section>

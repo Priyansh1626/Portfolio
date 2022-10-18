@@ -18,7 +18,7 @@ export default function About() {
             <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 col-md-12 abtLeft">
               <div
                 className="leftBox"
-                data-aos="fade-right"
+                data-aos="slide-right"
                 data-aos-duration="800"
               >
                 <div className="row m-0 p-0">
@@ -59,7 +59,7 @@ export default function About() {
             <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 abtRight">
               <div
                 className="rightBox"
-                data-aos="fade-right"
+                data-aos="slide-left"
                 data-aos-duration="800"
               >
                 <div className="abtHeading">

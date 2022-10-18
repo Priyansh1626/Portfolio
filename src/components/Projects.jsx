@@ -7,6 +7,7 @@ export default function Projects() {
   return (
     <>
       <section className="projectSection" id="projects">
+        <div className="lineClear"></div>
         <div className="clr">
           <div className="clr2">
             <div className="allinProject">

@@ -236,6 +236,16 @@
             width: 27rem !important;
         }
     }
+
+    .footerBox{
+
+        .socialLinkBox{
+
+            i{
+                font-size: 1.94rem !important;
+            }
+        }
+    }
 }
     
 @media (max-width:670px) {
@@ -280,6 +290,23 @@
         }
     }
 
+    .footerBox{
+
+        .socialLinkBox{
+
+            i{
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .copyrightBox{
+            font-size: 1rem !important;
+            
+            span{
+                font-size: 1rem !important;
+            }
+        }
+    }
 }
 
 @media (max-width:576px) {
@@ -307,6 +334,13 @@
                 & i{
                     font-size: 1rem !important;
                 }
+            }
+        }
+    }
+    .aboutSection{
+        .rightBox{
+            .abtResumeBtnBox{
+                text-align: center;
             }
         }
     }

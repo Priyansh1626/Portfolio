@@ -144,6 +144,9 @@
   .contactSection .formContainer {
     width: 27rem !important;
   }
+  .footerBox .socialLinkBox i {
+    font-size: 1.94rem !important;
+  }
 }
 @media (max-width: 670px) {
   .homeSection {
@@ -167,6 +170,15 @@
             clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0) !important;
     padding-bottom: 8rem !important;
   }
+  .footerBox .socialLinkBox i {
+    font-size: 1.8rem !important;
+  }
+  .footerBox .copyrightBox {
+    font-size: 1rem !important;
+  }
+  .footerBox .copyrightBox span {
+    font-size: 1rem !important;
+  }
 }
 @media (max-width: 576px) {
   .homeSection {
@@ -187,6 +199,9 @@
   }
   .homeMain_box .mid .myWorkBtn i {
     font-size: 1rem !important;
+  }
+  .aboutSection .rightBox .abtResumeBtnBox {
+    text-align: center;
   }
   .filterContainer .filterBtn {
     width: 7.8rem !important;
@@ -709,16 +724,19 @@ section {
   opacity: 1;
   transition: all 0.3s linear;
 }
-.skillsBox .lineHide {
-  height: 2vh;
-  width: 100%;
-  background-color: white;
-  position: absolute;
-  left: 0;
-  bottom: -1%;
-  z-index: 200;
-}
 
+.projectSection {
+  position: relative;
+}
+.projectSection .lineClear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: white;
+  z-index: 1;
+}
 .projectSection .clr {
   background-color: #252934;
 }

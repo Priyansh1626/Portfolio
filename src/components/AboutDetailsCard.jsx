@@ -4,7 +4,11 @@ export default function AboutDetailsCard(prop) {
   return (
     <>
       <div className="col-sm-6 p-0">
-        <div className="abtDataContainer">
+        <div
+          className="abtDataContainer"
+          data-aos="fade-out"
+          data-aos-duration="800"
+        >
           <div className="icon">
             <i className="fa-solid fa-angle-right"></i>
           </div>
