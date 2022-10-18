@@ -64,7 +64,9 @@ export default function About() {
               >
                 <div className="abtHeading">
                   <p>
-                    <span style={{ color: "#e31b6d" }}>Full-Stack</span>{" "}
+                    <span style={{ color: "#e31b6d", fontFamily: "PT Serif" }}>
+                      Full-Stack
+                    </span>{" "}
                     Developer
                   </p>
                 </div>

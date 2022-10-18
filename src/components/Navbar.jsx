@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 
 window.onscroll = () => {
+  //show navbar after certain height
   let header = document.querySelector(".header_container");
-  let sections = document.querySelectorAll("section");
-  let navli = document.querySelectorAll(".nav_link");
   let top = window.scrollY;
   if (top < 650) {
     header.style.opacity = 0;
   } else {
     header.style.opacity = 1;
   }
+
+  //nav link active on particular sections
+  let sections = document.querySelectorAll("section");
+  let navli = document.querySelectorAll(".nav_link");
   let current = "";
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;

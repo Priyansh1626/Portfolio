@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Prompt:wght@500&family=Roboto+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Arimo:wght@500&family=Lato&family=Merriweather+Sans&family=PT+Serif&family=Roboto:wght@400&family=Work+Sans&display=swap");
 @media (max-width: 1760px) {
   html {
     font-size: 105%;
@@ -149,7 +149,7 @@
     font-size: 2.4rem !important;
   }
   .homeMain_box .mid .myWorkBtn {
-    width: 11rem !important;
+    width: 11.5rem !important;
   }
   .rightBox .abtDataContainer {
     font-size: 1.32rem !important;
@@ -178,6 +178,8 @@
   .homeMain_box .mid .myWorkBtn {
     width: 11rem !important;
     font-size: 1.2rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .homeMain_box .mid .myWorkBtn i {
     font-size: 1rem !important;
@@ -275,16 +277,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-section {
   overflow-x: hidden;
-  overflow-y: hidden;
+}
+html::-webkit-scrollbar {
+  width: 0.7rem;
+}
+html::-webkit-scrollbar-track {
+  background-color: #181f29;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 0.15rem solid black;
+  border-radius: 3rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.737);
 }
 
 .flex {
@@ -361,6 +373,7 @@ section {
   color: rgba(255, 255, 255, 0.632);
   position: relative;
   transition: all 0.1s linear;
+  font-family: "Lato", sans-serif;
 }
 .header_container .navbar_links .nav_link a:hover {
   color: white;
@@ -382,13 +395,33 @@ section {
   transition: all 0.2s linear;
 }
 
+.headerbox {
+  height: 6rem;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.836);
+  position: relative;
+  font-family: "Arimo", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerbox::after {
+  content: "";
+  width: 5.5rem;
+  height: 0.3rem;
+  position: absolute;
+  bottom: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.599);
+  display: block;
+  border-radius: 1rem;
+}
+
 .homeSection {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  overflow: hidden;
 }
 .homeSection .typeHome {
   position: relative;
@@ -439,10 +472,11 @@ section {
 }
 .homeSection .homeMain_box span {
   color: #e31b6d;
-  font-family: "Roboto Slab";
-  overflow: hidden;
+  font-family: "Arimo", sans-serif;
+  text-shadow: 0.01rem 0.1rem 0.7rem rgba(227, 27, 110, 0.6705882353);
 }
 .homeSection .homeMain_box p {
+  font-family: "Roboto", serif;
   font-size: 3rem;
   line-height: 4rem;
 }
@@ -485,27 +519,6 @@ section {
   transform: translateY(0.2rem);
 }
 
-.headerbox {
-  height: 6rem;
-  font-size: 3rem;
-  color: rgba(0, 0, 0, 0.836);
-  position: relative;
-  font-family: "Prompt", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.headerbox::after {
-  content: "";
-  width: 5.5rem;
-  height: 0.3rem;
-  position: absolute;
-  bottom: 0.7rem;
-  background-color: rgba(0, 0, 0, 0.599);
-  display: block;
-  border-radius: 1rem;
-}
-
 .aboutSection {
   height: 100%;
   background-color: white;
@@ -525,6 +538,7 @@ section {
 .aboutSection .abtclr .abtLeft .leftBox .middleBox {
   margin-top: 1rem;
   font-size: 2rem;
+  font-family: "PT Serif", serif;
 }
 .aboutSection .abtclr .abtLeft .leftBox .bottomBox {
   margin-top: 0.3rem;
@@ -545,6 +559,7 @@ section {
 .aboutSection .abtclr .abtRight .rightBox .abtHeading p {
   font-size: 2rem;
   font-weight: 600;
+  font-family: "PT Serif", serif;
 }
 .aboutSection .abtclr .abtRight .rightBox .abtPara {
   font-size: 1.3rem;
@@ -561,7 +576,7 @@ section {
   text-decoration: none;
   color: white;
 }
-.aboutSection .abtclr .abtRight .rightBox a:hover {
+.aboutSection .abtclr .abtRight .rightBox a:hover, .aboutSection .abtclr .abtRight .rightBox a:active {
   transition: all 0.2s linear;
   box-shadow: 0.1rem 0.4rem 0.5rem rgba(227, 27, 110, 0.5176470588);
 }
@@ -616,7 +631,7 @@ section {
 .skillsBox .filterContainer .filterBox .filterBtn:nth-child(2) {
   border-right: none;
 }
-.skillsBox .filterContainer .filterBox .filterBtn:hover {
+.skillsBox .filterContainer .filterBox .filterBtn:hover, .skillsBox .filterContainer .filterBox .filterBtn:active {
   transition: all 0.2s linear;
   background-color: #e31b6d;
   color: white;
@@ -628,9 +643,9 @@ section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  overflow-y: hidden;
-  overflow-x: scroll;
   padding-bottom: 0.3rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 .skillsBox .filterDataBox::-webkit-scrollbar {
   display: none;
@@ -666,7 +681,7 @@ section {
   width: 80%;
   border-radius: 10%;
 }
-.skillsBox .filterDataBox .cardContainer .card:hover {
+.skillsBox .filterDataBox .cardContainer .card:hover, .skillsBox .filterDataBox .cardContainer .card:active {
   box-shadow: 0 0 1rem cyan;
 }
 .skillsBox .filterDataBox .cardContainer .cardName {
@@ -674,6 +689,7 @@ section {
   font-size: 2rem;
   opacity: 0;
   transition: all 0.3s linear;
+  font-family: "Merriweather Sans", sans-serif;
 }
 .skillsBox .filterDataBox .cardContainer:hover .card {
   transform: translateY(-0.6rem);
@@ -683,6 +699,15 @@ section {
   transform: translateY(3.5rem);
   opacity: 1;
   transition: all 0.3s linear;
+}
+.skillsBox .lineHide {
+  height: 2vh;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -1%;
+  z-index: 200;
 }
 
 .projectSection .clr {
@@ -741,7 +766,7 @@ section {
 }
 .projectSection .allinProject .project_main_box .row .projectCard .hoverDivBox .bottom {
   color: rgba(255, 0, 0, 0.597);
-  line-height: 1rem;
+  padding: 0 0.4rem;
 }
 .projectSection .allinProject .project_main_box .row .projectCard .hoverButtonBox {
   height: 3rem;
@@ -801,7 +826,7 @@ section {
   font-size: 3rem;
   color: white;
   position: relative;
-  font-family: "Prompt", sans-serif;
+  font-family: "Arimo", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -880,8 +905,6 @@ section {
 }
 
 .footerBox {
-  overflow-x: visible;
-  overflow-y: visible;
   background-color: #181f29;
   position: relative;
   padding-top: 3.4rem;
@@ -931,7 +954,12 @@ section {
   text-align: center;
   margin-top: 2rem;
   font-size: 1.1rem;
+  font-family: "Alata", sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5176470588);
 }
 .footerBox .copyrightBox span {
-  color: rgba(227, 27, 110, 0.7647058824);
+  color: rgba(227, 27, 110, 0.6470588235);
+  text-transform: uppercase;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */

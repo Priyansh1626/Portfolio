@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="copyrightBox">
-          Priyansh Pandey <span> &copy; 2022 </span>
+          Priyansh Pandey<span>&copy;2022 </span>
         </div>
       </section>
     </>
