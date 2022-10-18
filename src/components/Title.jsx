@@ -5,7 +5,7 @@ export default function Title(prop) {
 
   return (
     <>
-      <div className="headerbox" data-aos="slide-right">
+      <div className="headerbox" data-aos="fade-right">
         {title}
       </div>
     </>
