@@ -33,6 +33,11 @@ html {
     }
 }
 
+section{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 .flex{
     @include flex_center();
 }
@@ -428,9 +433,8 @@ html {
             flex-direction: column;
 
             .card{
-                // height: 35vh;
                 height: 15rem;
-                width: 19rem;
+                width: 18rem;
                 margin-top: -1rem;
                 background-color: white;
                 border: none;
@@ -724,6 +728,8 @@ html {
 .footerBox {
     // height: 25vh;
     background-color: #181f29;
+    overflow-x: visible;
+    overflow-y: visible;
     position: relative;
     padding-top: 3.4rem;
     color: white;
