@@ -20,7 +20,7 @@ const projectCardData = [
     img: postmasterProj,
     top: "Post Master",
     bottom: "Html / Css / Javascript",
-    btnLink: "https://dapper-cocada-270d70.netlify.app",
+    btnLink: "https://postmaster-priyansh.netlify.app/",
     btn: "Visit",
   },
   {
