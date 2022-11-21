@@ -9,10 +9,10 @@ import amazonProj from "../images/amazonProj.jpg";
 const projectCardData = [
   {
     id: "1",
-    img: ProjText,
-    top: "TextUtility",
-    bottom: "Html / Css / Javascript",
-    btnLink: "https://priyansh1626.github.io/TextConverter/",
+    img: netflixProj,
+    top: "Netflix UI",
+    bottom: "ReactJs / Sass / Javascript",
+    btnLink: "https://priyansh1626.github.io/Netflix/",
     btn: "Visit",
   },
   {
@@ -25,19 +25,19 @@ const projectCardData = [
   },
   {
     id: "3",
+    img: amazonProj,
+    top: "E-Commerce",
+    bottom: "ReactJs / MongoDB / Javascript / Sass",
+    btnLink: "https://github.com/Priyansh1626?tab=repositories",
+    btn: "visit",
+  },
+  {
+    id: "4",
     img: ProjNews,
     top: "NewsHunt",
     bottom: "ReactJS / Sass / Javascript",
     btnLink: "https://github.com/Priyansh1626/NewsHunt",
     btn: "Clone",
-  },
-  {
-    id: "4",
-    img: netflixProj,
-    top: "Netflix UI",
-    bottom: "ReactJs / Sass / Javascript",
-    btnLink: "https://priyansh1626.github.io/Netflix/",
-    btn: "Visit",
   },
   // {
   //   id: "5",
@@ -49,11 +49,11 @@ const projectCardData = [
   // },
   {
     id: "6",
-    img: amazonProj,
-    top: "Amazon",
-    bottom: "ReactJs / MongoDB / Javascript / Sass",
-    btnLink: "https://github.com/Priyansh1626?tab=repositories",
-    btn: "visit",
+    img: ProjText,
+    top: "TextUtility",
+    bottom: "Html / Css / Javascript",
+    btnLink: "https://github.com/Priyansh1626/TextConverter",
+    btn: "Visit",
   },
 ];
 
