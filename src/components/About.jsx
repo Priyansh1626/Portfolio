@@ -18,8 +18,9 @@ export default function About() {
             <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 col-md-12 abtLeft">
               <div
                 className="leftBox"
-                data-aos="slide-right"
-                data-aos-duration="800"
+                data-aos="fade-in"
+                data-aos-delay="70"
+                data-aos-mirror="true"
               >
                 <div className="row m-0 p-0">
                   <div className="col-lg-12 p-0">
@@ -59,8 +60,9 @@ export default function About() {
             <div className="col-lg-12 col-xl-6 col-xxl-6 p-0 abtRight">
               <div
                 className="rightBox"
-                data-aos="slide-right"
-                data-aos-duration="800"
+                data-aos="fade-in"
+                data-aos-delay="70"
+                data-aos-mirror="true"
               >
                 <div className="abtHeading">
                   <p>
@@ -79,12 +81,7 @@ export default function About() {
                   I am sure that I can build fast,working,dynamic and responsive
                   websites. Currently my focus is on BackEnd Development.
                 </p>
-                <div
-                  className="row m-0 p-0"
-                  data-aos="fade-out"
-                  data-aos-duration="500"
-                  data-aod-offset="200"
-                >
+                <div className="row m-0 p-0">
                   {aboutData.map((curr, index) => {
                     return (
                       <AboutDetailsCard

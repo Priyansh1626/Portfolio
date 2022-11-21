@@ -1,7 +1,7 @@
 // import cardGameImg from "../images/projImg1.jfif";
 import ProjText from "../images/ProjText.jfif";
 import ProjNews from "../images/ProjNews.jpg";
-import ProjCar from "../images/ProjCar.avif";
+// import ProjCar from "../images/ProjCar.avif";
 import netflixProj from "../images/netflixProj.png";
 import postmasterProj from "../images/postmasterProj.png";
 import amazonProj from "../images/amazonProj.jpg";
@@ -39,20 +39,20 @@ const projectCardData = [
     btnLink: "https://priyansh1626.github.io/Netflix/",
     btn: "Visit",
   },
-  {
-    id: "5",
-    img: ProjCar,
-    top: "Car Game",
-    bottom: "ReactJs / Sass / Javascript",
-    btnLink: "#",
-    btn: "Play",
-  },
+  // {
+  //   id: "5",
+  //   img: ProjCar,
+  //   top: "Car Game",
+  //   bottom: "ReactJs / Sass / Javascript",
+  //   btnLink: "/",
+  //   btn: "Play",
+  // },
   {
     id: "6",
     img: amazonProj,
     top: "Amazon",
     bottom: "ReactJs / MongoDB / Javascript / Sass",
-    btnLink: "#",
+    btnLink: "https://github.com/Priyansh1626?tab=repositories",
     btn: "visit",
   },
 ];

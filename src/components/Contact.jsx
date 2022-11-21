@@ -10,7 +10,13 @@ export default function Contact() {
         <br />
         <br />
         <Title title="CONTACT" />
-        <div className="ask" data-aos="fade-out" data-aos-duration="1000">
+        <div
+          className="ask"
+          data-aos="slide-left"
+          data-aos-offset="0"
+          data-aos-mirror="true"
+          data-aos-once="true"
+        >
           <p>Have a question or want to work together?</p>
         </div>
         <Contactform />

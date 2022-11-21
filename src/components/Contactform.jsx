@@ -8,8 +8,10 @@ export default function Contactform() {
           <form
             action="https://formspree.io/f/maykqkva"
             method="POST"
-            data-aos="slide-left"
-            data-aos-duration="800"
+            data-aos="fade-in"
+            data-aos-mirror="true"
+            data-aos-once="true"
+            data-aos-offset="130"
           >
             <input
               type="text"
@@ -34,7 +36,12 @@ export default function Contactform() {
               autoComplete="off"
               required
             />
-            <div className="btnBox">
+            <div
+              className="btnBox"
+              data-aos="zoom-up"
+              data-aos-offset="50"
+              data-aos-mirror="true"
+            >
               <button type="submit">Submit</button>
             </div>
           </form>

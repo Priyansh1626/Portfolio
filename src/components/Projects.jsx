@@ -17,8 +17,10 @@ export default function Projects() {
               <Title title="PROJECTS" />
               <div
                 className="project_main_box"
-                data-aos="fade-out"
-                data-aos-duration="1000"
+                data-aos="fade-in"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                data-aos-delay="50"
               >
                 <div className="row m-0 p-0">
                   {projectCardData.map((currElm) => {

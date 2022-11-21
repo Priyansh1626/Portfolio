@@ -6,14 +6,18 @@ export default function Home() {
     <>
       <Particle />
       <section className="homeSection" id="home">
-        <div className="homeMain_box" data-aos="fade-out">
-          <div className="mid">
+        <div className="homeMain_box">
+          <div className="mid" data-aos="fade-in" data-aos-mirror="true">
             <p>
               Hello, I am <span>Priyansh Pandey</span>
               <br />
               I'm a <span className="typeHome">full-stack</span> web developer.
             </p>
-            <div className="project_btn">
+            <div
+              className="project_btn"
+              data-aos="zoom-in"
+              data-aos-mirror="true"
+            >
               <a href="#about" className="myWorkBtn">
                 View my work <i className="fa-solid fa-arrow-right-long"></i>
               </a>

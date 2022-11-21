@@ -36,12 +36,14 @@ export default function Skill() {
             <br />
             <br />
             <Title title="SKILLS" />
-            <div
-              className="filterContainer"
-              data-aos="fade-out"
-              data-aos-duration="1500"
-            >
-              <div className="filterBox">
+            <div className="filterContainer">
+              <div
+                className="filterBox"
+                data-aos="fade-in"
+                data-aos-mirror="true"
+                data-aos-offset="80"
+                data-aos-delay="20"
+              >
                 {catItems.map((curr, index) => {
                   return (
                     <button
@@ -58,7 +60,9 @@ export default function Skill() {
             <div
               className="filterDataBox"
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-mirror="true"
+              data-aos-offset="190"
             >
               {item.map((currElm) => {
                 return (

@@ -7,7 +7,7 @@ export default function AboutDetailsCard(prop) {
         <div
           className="abtDataContainer"
           data-aos="fade-out"
-          data-aos-duration="800"
+          data-aos-offset="70"
         >
           <div className="icon">
             <i className="fa-solid fa-angle-right"></i>
