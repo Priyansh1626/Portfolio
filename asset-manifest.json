@@ -1,22 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.550e3bdf.css",
-    "main.js": "/Portfolio/static/js/main.50f32664.js",
+    "main.js": "/Portfolio/static/js/main.3c0c0cc9.js",
     "static/media/netflixProj.png": "/Portfolio/static/media/netflixProj.bf21d3729ccfe0885f1d.png",
     "static/media/ProjText.jfif": "/Portfolio/static/media/ProjText.7770f5fb3fc9fc31e146.jfif",
     "static/media/amazonProj.jpg": "/Portfolio/static/media/amazonProj.1e3821e9e93938ee401e.jpg",
     "static/media/Priyansh_Image.jpeg": "/Portfolio/static/media/Priyansh_Image.00b9c9bf3ee3a4404ca5.jpeg",
     "static/media/postmasterProj.png": "/Portfolio/static/media/postmasterProj.cc0f2d4292b46eb5580d.png",
-    "static/media/ProjCar.avif": "/Portfolio/static/media/ProjCar.765737a070fb1e7ce91b.avif",
     "static/media/ProjNews.jpg": "/Portfolio/static/media/ProjNews.d8da792189d7944a741a.jpg",
     "static/media/sassImg.png": "/Portfolio/static/media/sassImg.4f6d501b7b0af3eef7e2.png",
     "static/media/Resume_5thSem.pdf": "/Portfolio/static/media/Resume_5thSem.062f8970ba0e660f0c6f.pdf",
     "index.html": "/Portfolio/index.html",
     "main.550e3bdf.css.map": "/Portfolio/static/css/main.550e3bdf.css.map",
-    "main.50f32664.js.map": "/Portfolio/static/js/main.50f32664.js.map"
+    "main.3c0c0cc9.js.map": "/Portfolio/static/js/main.3c0c0cc9.js.map"
   },
   "entrypoints": [
     "static/css/main.550e3bdf.css",
-    "static/js/main.50f32664.js"
+    "static/js/main.3c0c0cc9.js"
   ]
 }
