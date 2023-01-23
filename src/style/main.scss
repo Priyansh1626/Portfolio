@@ -417,7 +417,7 @@ section{
         width: 100%;
         @include flex_center(flex-start);
         padding-bottom: .3rem;
-        overflow-x: auto;
+        overflow-x:auto ;
         overscroll-behavior-inline: contain;
         
         &::-webkit-scrollbar{
