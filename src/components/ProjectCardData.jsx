@@ -5,10 +5,37 @@ import ProjNews from "../images/ProjNews.jpg";
 import netflixProj from "../images/netflixProj.png";
 import postmasterProj from "../images/postmasterProj.png";
 import amazonProj from "../images/amazonProj.jpg";
+import Ignosis from "../images/Ignosis.jpg";
+import ChatApp from "../images/Chat-app.jpg";
 
 const projectCardData = [
   {
     id: "1",
+    img: amazonProj,
+    top: "The-Shop",
+    bottom: "ReactJs / NodeJs / MongoDB / Sass",
+    btnLink:
+      "https://64c2c114426c24006f77a9b9--helpful-cascaron-8a2d87.netlify.app",
+    btn: "visit",
+  },
+  {
+    id: "2",
+    img: Ignosis,
+    top: "Ignosis",
+    bottom: "ReactJS / NodeJs / MongoDB",
+    btnLink: "https://diagnosis-chi.vercel.app",
+    btn: "Visit",
+  },
+  {
+    id: "3",
+    img: ChatApp,
+    top: "Friendly-chat",
+    bottom: "ReactJs / NodeJs / MongoDB / SocketIO",
+    btnLink: "https://live-chat-app-frontend.vercel.app",
+    btn: "Visit",
+  },
+  {
+    id: "4",
     img: netflixProj,
     top: "Netflix UI",
     bottom: "ReactJs / Sass / Javascript",
@@ -16,44 +43,20 @@ const projectCardData = [
     btn: "Visit",
   },
   {
-    id: "2",
+    id: "5",
     img: postmasterProj,
     top: "Post Master",
     bottom: "Html / Css / Javascript",
-    btnLink: "https://postmaster-priyansh.netlify.app/",
+    btnLink: "https://postmaster-priyansh.netlify.app",
     btn: "Visit",
   },
   {
-    id: "3",
-    img: amazonProj,
-    top: "E-Commerce",
-    bottom: "ReactJs / MongoDB / Javascript / Sass",
-    btnLink: "https://github.com/Priyansh1626?tab=repositories",
-    btn: "visit",
-  },
-  {
-    id: "4",
+    id: "6",
     img: ProjNews,
     top: "NewsHunt",
     bottom: "ReactJS / Sass / Javascript",
     btnLink: "https://github.com/Priyansh1626/NewsHunt",
     btn: "Clone",
-  },
-  // {
-  //   id: "5",
-  //   img: ProjCar,
-  //   top: "Car Game",
-  //   bottom: "ReactJs / Sass / Javascript",
-  //   btnLink: "/",
-  //   btn: "Play",
-  // },
-  {
-    id: "6",
-    img: ProjText,
-    top: "TextUtility",
-    bottom: "Html / Css / Javascript",
-    btnLink: "https://github.com/Priyansh1626/TextConverter",
-    btn: "Visit",
   },
 ];
 
